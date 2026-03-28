@@ -1,5 +1,5 @@
 var print_8hpp =
 [
-    [ "tuipp::print", "namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d", null ],
-    [ "tuipp::println", "namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad", null ]
+    [ "tuipp::print", "namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d", null ],
+    [ "tuipp::println", "namespacetuipp.html#a5d1f055b28049e953210bfcad676393d", null ]
 ];

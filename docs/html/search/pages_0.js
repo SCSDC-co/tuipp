@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_3a_0',['Example:',['../namespacetuipp.html#autotoc_md0',1,'Example:'],['../namespacetuipp.html#autotoc_md3',1,'Example:']]]
+  ['examples_3a_0',['Examples:',['../namespacetuipp.html#autotoc_md0',1,'Examples:'],['../namespacetuipp.html#autotoc_md3',1,'Examples:']]]
 ];

@@ -17,24 +17,27 @@ tuipp
 
 .in +1c
 .ti -1c
-.RI "void \fBprintln\fP (const std::string &string='')"
+.RI "template<typename\&.\&.\&. Args> void \fBprintln\fP (const Args\&.\&.\&. content)"
 .br
-.RI "Print a string with a new line at the end (supports markup)\&. "
+.RI "Print an output to the screen with a new line at the end (supports markup)\&. "
 .ti -1c
-.RI "void \fBprint\fP (const std::string &string='')"
+.RI "template<typename\&.\&.\&. Args> void \fBprint\fP (const Args\&.\&.\&. content)"
 .br
-.RI "Print a string without a new line at the end (supports markup)\&. "
+.RI "Print an output to the screen without a new line at the end (supports markup)\&. "
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "void tuipp::print (const std::string & string = \fR''\fP)"
+.SS "template<typename\&.\&.\&. Args> void tuipp::print (const Args\&.\&.\&. content)\fR [inline]\fP"
 
 .PP
-Print a string without a new line at the end (supports markup)\&. 
-.SS "Example:"
+Print an output to the screen without a new line at the end (supports markup)\&. 
+.SS "Examples:"
 .PP
 .nf
 tuipp::print("[bold green]Hello, World![/]");
+tuipp::print("[green]This is green [bold]this is bold and green[/] this is still green[/]");
+tuipp::print("[blue]Number of files: [/]", 10, "\&.");
+tuipp::print("[green]This is green [bold]this is bold and green[reset] this is normal");
 .fi
 .PP
 .SS "Styles:"
@@ -45,7 +48,7 @@ Background colors: \fRbg_red\fP, \fRbg_green\fP, \fRbg_grey\fP, \fRbg_blue\fP, \
 .IP "\(bu" 2
 Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP
 .IP "\(bu" 2
-Reset: \fR/\fP
+Reset: \fR/\fP, \fRreset\fP
 .PP
 
 .PP
@@ -57,25 +60,28 @@ You can also escape markup brackets using a backslash:
 .PP
 .PP
 .nf
-tuipp::println("\\[bold red]Hello, World!\\[/]");
+tuipp::print("\\[bold red]Hello, World!\\[/]");
 .fi
 .PP
 
 .PP
 \fBParameters\fP
 .RS 4
-\fIstring\fP The string to be printed, it can be empty\&. 
+\fIcontent\fP The items you want to print, they can be of any type and you can pass as many as you want\&. 
 .RE
 .PP
 
-.SS "void tuipp::println (const std::string & string = \fR''\fP)"
+.SS "template<typename\&.\&.\&. Args> void tuipp::println (const Args\&.\&.\&. content)\fR [inline]\fP"
 
 .PP
-Print a string with a new line at the end (supports markup)\&. test
-.SS "Example:"
+Print an output to the screen with a new line at the end (supports markup)\&. 
+.SS "Examples:"
 .PP
 .nf
-tuipp::println("[bold red]Hello, World![/]");
+tuipp::println("[bold green]Hello, World![/]");
+tuipp::println("[green]This is green [bold]this is bold and green[/] this is still green[/]");
+tuipp::println("[blue]Number of files: [/]", 10, "\&.");
+tuipp::println("[green]This is green [bold]this is bold and green[reset] this is normal");
 .fi
 .PP
 .SS "Styles:"
@@ -86,7 +92,7 @@ Background colors: \fRbg_red\fP, \fRbg_green\fP, \fRbg_grey\fP, \fRbg_blue\fP, \
 .IP "\(bu" 2
 Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP
 .IP "\(bu" 2
-Reset: \fR/\fP
+Reset: \fR/\fP, \fRreset\fP
 .PP
 
 .PP
@@ -105,7 +111,7 @@ tuipp::println("\\[bold red]Hello, World!\\[/]");
 .PP
 \fBParameters\fP
 .RS 4
-\fIstring\fP The string to be printed, it can be empty\&. 
+\fIcontent\fP The items you want to print, they can be of any type and you can pass as many as you want\&. 
 .RE
 .PP
 

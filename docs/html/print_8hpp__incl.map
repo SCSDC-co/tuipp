@@ -1,5 +1,11 @@
 <map id="include/tuipp/print.hpp" name="include/tuipp/print.hpp">
-<area shape="rect" id="Node000001" title="A utility to print text with markup support." alt="" coords="5,5,154,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="53,80,106,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,31,82,65,77,64,78,35"/>
+<area shape="rect" id="Node000001" title="A utility to print text with markup support." alt="" coords="103,5,251,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,88,77,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,35,77,82,74,78,155,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,88,168,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,31,150,76,146,73,168,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,88,246,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,30,209,75,203,74,182,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,80,401,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="202,30,284,72,279,73,201,35"/>
 </map>

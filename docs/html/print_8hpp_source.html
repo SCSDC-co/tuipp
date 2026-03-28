@@ -96,20 +96,58 @@ $(function(){initNavTree('print_8hpp_source.html','',''); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetuipp.html">tuipp</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">   56</a></span><a class="code hl_function" href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">println</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">string</span> = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">   91</a></span><a class="code hl_function" href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">print</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">string</span> = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>} <span class="comment">// namespace tuipp</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;../../src/tuipp/parse_string.hpp&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetuipp.html">tuipp</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">   65</a></span><a class="code hl_function" href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">println</a>(<span class="keyword">const</span> Args... content)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::ostream&amp; output = std::cout;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    (</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      [&amp;]() {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_convertible_v&lt;<span class="keyword">decltype</span>(content), std::string&gt;) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>              parse_string(output, content);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>              output &lt;&lt; content;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      }(),</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      ...);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    output &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">  120</a></span><a class="code hl_function" href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">print</a>(<span class="keyword">const</span> Args... content)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>{</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    std::ostream&amp; output = std::cout;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    (</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      [&amp;]() {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_convertible_v&lt;<span class="keyword">decltype</span>(content), std::string&gt;) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>              parse_string(output, content);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>              output &lt;&lt; content;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>          }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      }(),</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      ...);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>} <span class="comment">// namespace tuipp</span></div>
 <div class="ttc" id="anamespacetuipp_html"><div class="ttname"><a href="namespacetuipp.html">tuipp</a></div><div class="ttdef"><b>Definition</b> Console.hpp:15</div></div>
-<div class="ttc" id="anamespacetuipp_html_a0142e1c370144a4b09c7110ad565ab1d"><div class="ttname"><a href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">tuipp::print</a></div><div class="ttdeci">void print(const std::string &amp;string=&quot;&quot;)</div><div class="ttdoc">Print a string without a new line at the end (supports markup).</div></div>
-<div class="ttc" id="anamespacetuipp_html_a9ee62c561a4b5505a9a1528b66e223ad"><div class="ttname"><a href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">tuipp::println</a></div><div class="ttdeci">void println(const std::string &amp;string=&quot;&quot;)</div><div class="ttdoc">Print a string with a new line at the end (supports markup).</div></div>
+<div class="ttc" id="anamespacetuipp_html_a5d1f055b28049e953210bfcad676393d"><div class="ttname"><a href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">tuipp::println</a></div><div class="ttdeci">void println(const Args... content)</div><div class="ttdoc">Print an output to the screen with a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:65</div></div>
+<div class="ttc" id="anamespacetuipp_html_ae09389043d5ba7e19ca25bd780f3548d"><div class="ttname"><a href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">tuipp::print</a></div><div class="ttdeci">void print(const Args... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:120</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

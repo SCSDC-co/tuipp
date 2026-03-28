@@ -100,9 +100,15 @@ Include dependency graph for print.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="print_8hpp__incl.png" border="0" usemap="#ainclude_2tuipp_2print_8hpp" loading="lazy" alt=""/></div>
 <map name="ainclude_2tuipp_2print_8hpp" id="ainclude_2tuipp_2print_8hpp">
-<area shape="rect" title="A utility to print text with markup support." alt="" coords="5,5,154,32"/>
-<area shape="rect" title=" " alt="" coords="53,80,106,107"/>
-<area shape="poly" title=" " alt="" coords="81,31,82,65,77,64,78,35"/>
+<area shape="rect" title="A utility to print text with markup support." alt="" coords="103,5,251,32"/>
+<area shape="rect" title=" " alt="" coords="5,88,77,115"/>
+<area shape="poly" title=" " alt="" coords="157,35,77,82,74,78,155,30"/>
+<area shape="rect" title=" " alt="" coords="100,88,168,115"/>
+<area shape="poly" title=" " alt="" coords="173,31,150,76,146,73,168,34"/>
+<area shape="rect" title=" " alt="" coords="193,88,246,115"/>
+<area shape="poly" title=" " alt="" coords="185,30,209,75,203,74,182,35"/>
+<area shape="rect" title=" " alt="" coords="270,80,401,123"/>
+<area shape="poly" title=" " alt="" coords="202,30,284,72,279,73,201,35"/>
 </map>
 </div>
 </div>
@@ -114,19 +120,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9ee62c561a4b5505a9a1528b66e223ad" id="r_a9ee62c561a4b5505a9a1528b66e223ad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">tuipp::println</a> (const std::string &amp;string=&quot;&quot;)</td></tr>
-<tr class="memdesc:a9ee62c561a4b5505a9a1528b66e223ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a string with a new line at the end (supports markup).  <br /></td></tr>
-<tr class="memitem:a0142e1c370144a4b09c7110ad565ab1d" id="r_a0142e1c370144a4b09c7110ad565ab1d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">tuipp::print</a> (const std::string &amp;string=&quot;&quot;)</td></tr>
-<tr class="memdesc:a0142e1c370144a4b09c7110ad565ab1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a string without a new line at the end (supports markup).  <br /></td></tr>
+<tr class="memitem:a5d1f055b28049e953210bfcad676393d" id="r_a5d1f055b28049e953210bfcad676393d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a5d1f055b28049e953210bfcad676393d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">tuipp::println</a> (const Args... content)</td></tr>
+<tr class="memdesc:a5d1f055b28049e953210bfcad676393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an output to the screen with a new line at the end (supports markup).  <br /></td></tr>
+<tr class="memitem:ae09389043d5ba7e19ca25bd780f3548d" id="r_ae09389043d5ba7e19ca25bd780f3548d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae09389043d5ba7e19ca25bd780f3548d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">tuipp::print</a> (const Args... content)</td></tr>
+<tr class="memdesc:ae09389043d5ba7e19ca25bd780f3548d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an output to the screen without a new line at the end (supports markup).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility to print text with markup support. </p>
 <p>Example:</p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">tuipp::println</a>(<span class="stringliteral">&quot;[bold red]Hello, World![/]&quot;</span>);</div>
+<div class="fragment"><div class="line"><a class="code hl_function" href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">tuipp::println</a>(<span class="stringliteral">&quot;[bold red]Hello, World![/]&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">tuipp::print</a>(<span class="stringliteral">&quot;[bold green]Hello, World![/]&quot;</span>);</div>
-<div class="ttc" id="anamespacetuipp_html_a0142e1c370144a4b09c7110ad565ab1d"><div class="ttname"><a href="namespacetuipp.html#a0142e1c370144a4b09c7110ad565ab1d">tuipp::print</a></div><div class="ttdeci">void print(const std::string &amp;string=&quot;&quot;)</div><div class="ttdoc">Print a string without a new line at the end (supports markup).</div></div>
-<div class="ttc" id="anamespacetuipp_html_a9ee62c561a4b5505a9a1528b66e223ad"><div class="ttname"><a href="namespacetuipp.html#a9ee62c561a4b5505a9a1528b66e223ad">tuipp::println</a></div><div class="ttdeci">void println(const std::string &amp;string=&quot;&quot;)</div><div class="ttdoc">Print a string with a new line at the end (supports markup).</div></div>
+<div class="line"><a class="code hl_function" href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">tuipp::print</a>(<span class="stringliteral">&quot;[bold green]Hello, World![/]&quot;</span>);</div>
+<div class="ttc" id="anamespacetuipp_html_a5d1f055b28049e953210bfcad676393d"><div class="ttname"><a href="namespacetuipp.html#a5d1f055b28049e953210bfcad676393d">tuipp::println</a></div><div class="ttdeci">void println(const Args... content)</div><div class="ttdoc">Print an output to the screen with a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:65</div></div>
+<div class="ttc" id="anamespacetuipp_html_ae09389043d5ba7e19ca25bd780f3548d"><div class="ttname"><a href="namespacetuipp.html#ae09389043d5ba7e19ca25bd780f3548d">tuipp::print</a></div><div class="ttdeci">void print(const Args... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:120</div></div>
 </div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Giuliano De Amicis </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

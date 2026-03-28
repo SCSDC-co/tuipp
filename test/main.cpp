@@ -1,12 +1,13 @@
-#include <iostream>
-#include <string>
-
 #include "tuipp/Console.hpp"
 #include "tuipp/print.hpp"
 
 int
 main()
 {
+    tuipp::Console console{};
+
+    tuipp::Console::TerminalSize console_size = console.get_terminal_size();
+
     tuipp::println("[red bold]Hello,[/] [green]World![/]");
     tuipp::println("[green bold]Hello,[/] [cyan]World![/]");
 
@@ -14,10 +15,7 @@ main()
 
     tuipp::println("\\[bold]Hello, World!\\[/]");
 
-    tuipp::Console console{};
-
-    std::cout << console.get_terminal_size().width << "x" << console.get_terminal_size().height
-              << std::endl;
+    tuipp::println(console_size.width, "x", console_size.height);
 
     return 0;
 }

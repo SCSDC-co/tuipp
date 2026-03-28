@@ -54,6 +54,7 @@ if(TUIPP_BUILD_DOCS)
             COMMAND ${CMAKE_COMMAND} -E echo "All docs build successfully."
             COMMAND
                 ${CMAKE_COMMAND} -E echo "Output: ${DOXYGEN_OUTPUT_DIRECTORY}"
+            COMMAND ${CMAKE_COMMAND} -E echo ""
         )
     else()
         message(FATAL_ERROR "Doxygen not found. Please install it")
