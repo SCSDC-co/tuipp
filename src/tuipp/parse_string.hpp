@@ -3,194 +3,20 @@
 #include <cstddef>
 #include <iostream>
 #include <ostream>
-#include <sstream>
 #include <stdexcept>
 #include <string>
-#include <unordered_map>
+#include <vector>
 
+#include "handle_styles.hpp"
 #include "vendor/termcolor.hpp"
 
 namespace tuipp {
-
-enum class Style
-{
-    RED,
-    GREEN,
-    GREY,
-    BLUE,
-    MAGENTA,
-    YELLOW,
-    CYAN,
-    WHITE,
-    BG_RED,
-    BG_GREEN,
-    BG_GREY,
-    BG_BLUE,
-    BG_MAGENTA,
-    BG_YELLOW,
-    BG_CYAN,
-    BG_WHITE,
-    BRIGHT_RED,
-    BRIGHT_GREEN,
-    BRIGHT_GREY,
-    BRIGHT_BLUE,
-    BRIGHT_MAGENTA,
-    BRIGHT_YELLOW,
-    BRIGHT_CYAN,
-    BRIGHT_WHITE,
-    BOLD,
-    UNDERLINE,
-    BLINK,
-    ITALIC,
-    RESET,
-};
 
 enum class State
 {
     TEXT,
     TAG
 };
-
-inline const std::unordered_map<std::string, Style> token_to_style{
-    { "red", Style::RED },
-    { "green", Style::GREEN },
-    { "grey", Style::GREY },
-    { "blue", Style::BLUE },
-    { "magenta", Style::MAGENTA },
-    { "yellow", Style::YELLOW },
-    { "cyan", Style::CYAN },
-    { "white", Style::WHITE },
-    { "bg_red", Style::BG_RED },
-    { "bg_green", Style::BG_GREEN },
-    { "bg_grey", Style::BG_GREY },
-    { "bg_blue", Style::BG_BLUE },
-    { "bg_magenta", Style::BG_MAGENTA },
-    { "bg_yellow", Style::BG_YELLOW },
-    { "bg_cyan", Style::BG_CYAN },
-    { "bg_white", Style::BG_WHITE },
-    { "bright_red", Style::BRIGHT_RED },
-    { "bright_green", Style::BRIGHT_GREEN },
-    { "bright_grey", Style::BRIGHT_GREY },
-    { "bright_blue", Style::BRIGHT_BLUE },
-    { "bright_magenta", Style::BRIGHT_MAGENTA },
-    { "bright_yellow", Style::BRIGHT_YELLOW },
-    { "bright_cyan", Style::BRIGHT_CYAN },
-    { "bright_white", Style::BRIGHT_WHITE },
-    { "bold", Style::BOLD },
-    { "underline", Style::UNDERLINE },
-    { "blink", Style::BLINK },
-    { "italic", Style::ITALIC },
-    { "/", Style::RESET },
-};
-
-template<typename CharT>
-std::basic_ostream<CharT>&
-handle_styles(std::basic_ostream<CharT>& stream, const std::string& buffer)
-{
-    // this will take the individual words from buffer
-    std::istringstream iss(buffer);
-    std::string token{};
-
-    while (iss >> token) {
-        if (token_to_style.find(token) == token_to_style.end()) {
-            throw std::invalid_argument("\"" + token + "\"" + " is not a valid token.");
-        } else {
-            Style style{ token_to_style.at(token) };
-
-            switch (style) {
-                case Style::RED:
-                    stream << termcolor::red;
-                    break;
-                case Style::GREEN:
-                    stream << termcolor::green;
-                    break;
-                case Style::GREY:
-                    stream << termcolor::grey;
-                    break;
-                case Style::BLUE:
-                    stream << termcolor::blue;
-                    break;
-                case Style::MAGENTA:
-                    stream << termcolor::magenta;
-                    break;
-                case Style::YELLOW:
-                    stream << termcolor::yellow;
-                    break;
-                case Style::CYAN:
-                    stream << termcolor::cyan;
-                    break;
-                case Style::WHITE:
-                    stream << termcolor::white;
-                    break;
-                case Style::BG_RED:
-                    stream << termcolor::on_red;
-                    break;
-                case Style::BG_GREEN:
-                    stream << termcolor::on_green;
-                    break;
-                case Style::BG_GREY:
-                    stream << termcolor::on_grey;
-                    break;
-                case Style::BG_BLUE:
-                    stream << termcolor::on_blue;
-                    break;
-                case Style::BG_MAGENTA:
-                    stream << termcolor::on_magenta;
-                    break;
-                case Style::BG_YELLOW:
-                    stream << termcolor::on_yellow;
-                    break;
-                case Style::BG_CYAN:
-                    stream << termcolor::on_cyan;
-                    break;
-                case Style::BG_WHITE:
-                    stream << termcolor::on_white;
-                    break;
-                case Style::BRIGHT_RED:
-                    stream << termcolor::bright_red;
-                    break;
-                case Style::BRIGHT_GREEN:
-                    stream << termcolor::bright_green;
-                    break;
-                case Style::BRIGHT_GREY:
-                    stream << termcolor::bright_grey;
-                    break;
-                case Style::BRIGHT_BLUE:
-                    stream << termcolor::bright_blue;
-                    break;
-                case Style::BRIGHT_MAGENTA:
-                    stream << termcolor::bright_magenta;
-                    break;
-                case Style::BRIGHT_YELLOW:
-                    stream << termcolor::bright_yellow;
-                    break;
-                case Style::BRIGHT_CYAN:
-                    stream << termcolor::bright_cyan;
-                    break;
-                case Style::BRIGHT_WHITE:
-                    stream << termcolor::bright_white;
-                    break;
-                case Style::BOLD:
-                    stream << termcolor::bold;
-                    break;
-                case Style::UNDERLINE:
-                    stream << termcolor::underline;
-                    break;
-                case Style::BLINK:
-                    stream << termcolor::blink;
-                    break;
-                case Style::ITALIC:
-                    stream << termcolor::italic;
-                    break;
-                case Style::RESET:
-                    stream << termcolor::reset;
-                    break;
-            }
-        }
-    }
-
-    return stream;
-}
 
 template<typename CharT>
 std::basic_ostream<CharT>&
@@ -200,47 +26,50 @@ parse_string(std::basic_ostream<CharT>& stream, const std::string& string)
 
     std::string buffer{};
 
+    std::vector<Style> styles{};
+
     char prev_char{};
 
     for (std::size_t i = 0; i < string.size(); ++i) {
-        char c{ string[i] };
-
+        char current_char{ string[i] };
         char next_char{ string[i + 1] };
 
         switch (state) {
             case State::TEXT: {
-                if (c == '[' && prev_char != '\\') {
+                if (current_char == '[' && prev_char != '\\') {
                     state = State::TAG;
 
                     buffer.clear();
                 } else {
                     // this will print just '[' instead of '\['
-                    if (!(c == '\\' && i + 1 < string.size() && next_char == '[')) {
-                        stream << c;
+                    if (!(current_char == '\\' && i + 1 < string.size() && next_char == '[')) {
+                        stream << current_char;
                     }
                 }
 
                 break;
             }
             case State::TAG: {
-                if (c == ']') {
+                if (current_char == ']') {
                     state = State::TEXT;
 
                     try {
-                        handle_styles(stream, buffer);
+                        handle_styles(stream, buffer, styles);
                     } catch (const std::invalid_argument& e) {
                         std::cerr << std::endl << "[WARNING] " << e.what() << std::endl;
                     }
                 } else {
-                    buffer += c;
+                    buffer += current_char;
                 }
 
                 break;
             }
         }
 
-        prev_char = c;
+        prev_char = current_char;
     }
+
+    stream << termcolor::reset;
 
     return stream;
 }
