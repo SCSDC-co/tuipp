@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['terminalsize_0',['TerminalSize',['../structtuipp_1_1Console_1_1TerminalSize.html',1,'tuipp::Console']]],
-  ['tuipp_1',['tuipp',['../namespacetuipp.html',1,'']]]
+  ['styles_3a_0',['Styles:',['../namespacetuipp.html#autotoc_md1',1,'Styles:'],['../namespacetuipp.html#autotoc_md4',1,'Styles:']]]
 ];

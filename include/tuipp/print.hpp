@@ -61,8 +61,8 @@ namespace tuipp {
  * you want.
  */
 template<typename... Args>
-inline void
-println(const Args... content)
+void
+println(const Args&... content)
 {
     std::ostream& output = std::cout;
 
@@ -116,8 +116,8 @@ println(const Args... content)
  * you want.
  */
 template<typename... Args>
-inline void
-print(const Args... content)
+void
+print(const Args&... content)
 {
     std::ostream& output = std::cout;
 

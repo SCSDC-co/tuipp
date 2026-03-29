@@ -11,6 +11,7 @@
 #include <cstddef>
 
 #include "private/macros.hpp"
+#include "tuipp/print.hpp"
 
 namespace tuipp {
 
@@ -22,6 +23,14 @@ class Console
         std::size_t width{};
         std::size_t height{};
     };
+
+    template<typename... Args>
+    Console& operator<<(const Args&... value)
+    {
+        print(value...);
+
+        return *this;
+    }
 
     TUIPP_NODISCARD TerminalSize get_terminal_size();
 

@@ -8,7 +8,6 @@
 #include <vector>
 
 #include "handle_styles.hpp"
-#include "vendor/termcolor.hpp"
 
 namespace tuipp {
 
@@ -68,8 +67,6 @@ parse_string(std::basic_ostream<CharT>& stream, const std::string& string)
 
         prev_char = current_char;
     }
-
-    stream << termcolor::reset;
 
     return stream;
 }
