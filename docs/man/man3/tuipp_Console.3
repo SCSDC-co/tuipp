@@ -17,7 +17,7 @@ tuipp::Console
 
 .in +1c
 .ti -1c
-.RI "template<typename\&.\&.\&. Args> \fBConsole\fP & \fBoperator<<\fP (const Args &\&.\&.\&. value)"
+.RI "template<typename T> \fBConsole\fP & \fBoperator<<\fP (const T &value)"
 .br
 .ti -1c
 .RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBget_terminal_size\fP ()"
@@ -34,7 +34,7 @@ tuipp::Console
 .PP 
 .SS "TUIPP_NODISCARD \fBTerminalSize\fP tuipp::Console::get_terminal_size ()"
 
-.SS "template<typename\&.\&.\&. Args> \fBConsole\fP & tuipp::Console::operator<< (const Args &\&.\&.\&. value)\fR [inline]\fP"
+.SS "template<typename T> \fBConsole\fP & tuipp::Console::operator<< (const T & value)\fR [inline]\fP"
 
 
 .SH "Author"

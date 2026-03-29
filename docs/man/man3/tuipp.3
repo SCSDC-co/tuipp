@@ -78,9 +78,11 @@ Print an output to the screen with a new line at the end (supports markup)\&.
 .SS "Examples:"
 .PP
 .nf
-tuipp::println("[bold green]Hello, World![/]");
-tuipp::println("[green]This is green [bold]this is bold and green[/] this is still green[/]");
-tuipp::println("[blue]Number of files: [/]", 10, "\&.");
+tuipp::println("[bold green]Hello, World![reset]");
+tuipp::println(
+"[green]This is green [bold]this is bold and green[/] this is still green[reset]"
+);
+tuipp::println("[blue]Number of files: [reset]", 10, "\&.");
 tuipp::println("[green]This is green [bold]this is bold and green[reset] this is normal");
 .fi
 .PP
@@ -92,7 +94,7 @@ Background colors: \fRbg_red\fP, \fRbg_green\fP, \fRbg_grey\fP, \fRbg_blue\fP, \
 .IP "\(bu" 2
 Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP
 .IP "\(bu" 2
-Reset: \fR/\fP, \fRreset\fP
+Reset: \fR/\fP (for one style), \fRreset\fP (for all the styles)
 .PP
 
 .PP

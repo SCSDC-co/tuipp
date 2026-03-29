@@ -6,9 +6,8 @@
  * @details Example:
  *
  * @code{.cpp}
- * tuipp::println("[bold red]Hello, World![/]");
- *
- * tuipp::print("[bold green]Hello, World![/]");
+ * tuipp::println("[bold red]Hello, World![reset]");
+ * tuipp::print("[bold green]Hello, World![reset]");
  * @endcode
  *
  * @author Giuliano De Amicis
@@ -30,9 +29,11 @@ namespace tuipp {
  * ## Examples:
  *
  * @code{.cpp}
- * tuipp::println("[bold green]Hello, World![/]");
- * tuipp::println("[green]This is green [bold]this is bold and green[/] this is still green[/]");
- * tuipp::println("[blue]Number of files: [/]", 10, ".");
+ * tuipp::println("[bold green]Hello, World![reset]");
+ * tuipp::println(
+ * "[green]This is green [bold]this is bold and green[/] this is still green[reset]"
+ * );
+ * tuipp::println("[blue]Number of files: [reset]", 10, ".");
  * tuipp::println("[green]This is green [bold]this is bold and green[reset] this is normal");
  * @endcode
  *
@@ -47,7 +48,7 @@ namespace tuipp {
  *
  * - Effects: `bold`, `underline`, `blink`, `italic`
  *
- * - Reset: `/`, `reset`
+ * - Reset: `/` (for one style), `reset` (for all the styles)
  *
  * ---
  *

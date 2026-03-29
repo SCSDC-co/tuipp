@@ -131,7 +131,7 @@ Examples:</h2>
 <div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[/] this is still green[/]&quot;</span>);</div>
 <div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[blue]Number of files: [/]&quot;</span>, 10, <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[reset] this is normal&quot;</span>);</div>
-<div class="ttc" id="anamespacetuipp_html_a795bf9ac1ac4736ba4f777aac3395d5e"><div class="ttname"><a href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a></div><div class="ttdeci">void print(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:120</div></div>
+<div class="ttc" id="anamespacetuipp_html_a795bf9ac1ac4736ba4f777aac3395d5e"><div class="ttname"><a href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a></div><div class="ttdeci">void print(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:121</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 Styles:</h2>
 <ul>
@@ -172,18 +172,20 @@ template&lt;typename... Args&gt; </div>
 <p>Print an output to the screen with a new line at the end (supports markup). </p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 Examples:</h2>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[bold green]Hello, World![/]&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[/] this is still green[/]&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[blue]Number of files: [/]&quot;</span>, 10, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="fragment"><div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[bold green]Hello, World![reset]&quot;</span>);</div>
+<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(</div>
+<div class="line"><span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[/] this is still green[reset]&quot;</span></div>
+<div class="line">);</div>
+<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[blue]Number of files: [reset]&quot;</span>, 10, <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[reset] this is normal&quot;</span>);</div>
-<div class="ttc" id="anamespacetuipp_html_a6ff07c907c89acf092f5f6310f11f857"><div class="ttname"><a href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a></div><div class="ttdeci">void println(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen with a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:65</div></div>
+<div class="ttc" id="anamespacetuipp_html_a6ff07c907c89acf092f5f6310f11f857"><div class="ttname"><a href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a></div><div class="ttdeci">void println(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen with a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:66</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 Styles:</h2>
 <ul>
 <li>Foreground colors: <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">grey</span>, <span class="tt">blue</span>, <span class="tt">magenta</span>, <span class="tt">yellow</span>, <span class="tt">white</span>, <span class="tt">bright_red</span>, <span class="tt">bright_green</span>, <span class="tt">bright_grey</span>, <span class="tt">bright_blue</span>, <span class="tt">bright_magenta</span>, <span class="tt">bright_yellow</span>, <span class="tt">bright_cyan</span>, <span class="tt">bright_white</span></li>
 <li>Background colors: <span class="tt">bg_red</span>, <span class="tt">bg_green</span>, <span class="tt">bg_grey</span>, <span class="tt">bg_blue</span>, <span class="tt">bg_magenta</span>, <span class="tt">bg_yellow</span>, <span class="tt">bg_cyan</span>, <span class="tt">bg_white</span></li>
 <li>Effects: <span class="tt">bold</span>, <span class="tt">underline</span>, <span class="tt">blink</span>, <span class="tt">italic</span></li>
-<li>Reset: <span class="tt">/</span>, <span class="tt">reset</span></li>
+<li>Reset: <span class="tt">/</span> (for one style), <span class="tt">reset</span> (for all the styles)</li>
 </ul>
 <hr  />
 <p>You can also escape markup brackets using a backslash:</p>

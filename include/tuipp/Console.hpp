@@ -24,10 +24,10 @@ class Console
         std::size_t height{};
     };
 
-    template<typename... Args>
-    Console& operator<<(const Args&... value)
+    template<typename T>
+    Console& operator<<(const T& value)
     {
-        print(value...);
+        print(value);
 
         return *this;
     }

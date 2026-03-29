@@ -7,7 +7,6 @@
 #  define VC_EXTRALEAN
 #  include <Windows.h>
 #elif defined(ON_UNIX_LIKE)
-#  include <cstdio>
 #  include <sys/ioctl.h>
 #endif
 
