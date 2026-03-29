@@ -19,7 +19,7 @@
 #include <ostream>
 #include <string>
 
-#include "../../src/tuipp/parse_string.hpp"
+#include "../../src/tuipp/parse_string_to_ast.hpp"
 
 namespace tuipp {
 
@@ -70,7 +70,11 @@ println(const Args&... content)
     (
       [&]() {
           if constexpr (std::is_convertible_v<decltype(content), std::string>) {
-              parse_string(output, content);
+              Ast ast = parse_string_to_ast(content);
+
+              for (const auto& item : ast.children) {
+                  std::cout << item->content;
+              }
           } else {
               output << content;
           }

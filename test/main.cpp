@@ -17,7 +17,7 @@ main()
 
     tuipp::println(console_size.width, "x", console_size.height);
 
-    console << "[bold green]Hello, " << "World!" << "[reset], " << 10 << "." << '\n';
+    // console << "[bold green]Hello, " << "World!" << "[reset], " << 10 << "." << '\n';
 
     return 0;
 }
