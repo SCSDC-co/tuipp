@@ -19,7 +19,7 @@
 #include <ostream>
 #include <string>
 
-#include "../../src/tuipp/parse_string.hpp"
+#include "../../src/tuipp/string_parser/parse_string.hpp"
 
 namespace tuipp {
 
