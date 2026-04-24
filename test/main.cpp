@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 #include "tuipp/Console.hpp"
 #include "tuipp/colors.hpp"
@@ -20,6 +21,10 @@ main()
     tuipp::println("[green]Green text [bold]green and bold text[/] still green[/]");
 
     tuipp::println("[green]Terminal size: [/]", console_size.width, "x", console_size.height);
+
+    std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+
+    tuipp::println(vector);
 
     console << "[bold green]Console output![/] " << 10 << "." << '\n';
 

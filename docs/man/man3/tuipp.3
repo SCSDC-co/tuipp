@@ -42,20 +42,22 @@ Print an output to the screen without a new line at the end (supports markup)\&.
 .PP
 .nf
 tuipp::print("[bold green]Hello, World![/]");
-tuipp::print("[green]This is green [bold]this is bold and green[/] this is still green[/]");
+tuipp::print(
+"[green]This is green [bold]this is bold and green[/] this is still green[/]"
+);
 tuipp::print("[blue]Number of files: [/]", 10, "\&.");
 tuipp::print("[green]This is green [bold]this is bold and green[reset] this is normal");
 .fi
 .PP
 .SS "Styles:"
 .IP "\(bu" 2
-Foreground colors: \fRred\fP, \fRgreen\fP, \fRgrey\fP, \fRblue\fP, \fRmagenta\fP, \fRyellow\fP, \fRwhite\fP, \fRbright_red\fP, \fRbright_green\fP, \fRbright_grey\fP, \fRbright_blue\fP, \fRbright_magenta\fP, \fRbright_yellow\fP, \fRbright_cyan\fP, \fRbright_white\fP
-.IP "\(bu" 2
-Background colors: \fRbg_red\fP, \fRbg_green\fP, \fRbg_grey\fP, \fRbg_blue\fP, \fRbg_magenta\fP, \fRbg_yellow\fP, \fRbg_cyan\fP, \fRbg_white\fP
+Foreground colors: \fRred\fP, \fRgreen\fP, \fRgrey\fP, \fRblue\fP, \fRmagenta\fP, \fRyellow\fP, \fRwhite\fP, \fRbright red\fP, \fRbright green\fP, \fRbright grey\fP, \fRbright blue\fP, \fRbright magenta\fP, \fRbright yellow\fP, \fRbright cyan\fP, \fRbright white\fP
 .IP "\(bu" 2
 Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP
 .IP "\(bu" 2
-Reset: \fR/\fP, \fRreset\fP
+Reset: \fR/\fP (for one style)
+.IP "\(bu" 2
+For the background colors just type: \fRon <color>\fP
 .PP
 
 .PP
@@ -101,7 +103,7 @@ Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP
 .IP "\(bu" 2
 Reset: \fR/\fP (for one style)
 .IP "\(bu" 2
-For the background colors just type: \fRon <color>\fP (the bright colors aren't supported)
+For the background colors just type: \fRon <color>\fP
 .PP
 
 .PP

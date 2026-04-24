@@ -17,6 +17,7 @@
 
 #include <iostream>
 #include <ostream>
+#include <print>
 #include <string>
 
 #include "../../src/tuipp/string_parser/parse_string.hpp"
@@ -57,6 +58,16 @@ namespace tuipp {
  * tuipp::println("\[bold red]Hello, World!\[/]");
  * @endcode
  *
+ * ---
+ *
+ * It can also print iterables:
+ *
+ * @code{.cpp}
+ * std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+ *
+ * tuipp::println(vector);
+ * @endcode
+ *
  * @param content The items you want to print, they can be of any type and you can pass as many as
  * you want.
  */
@@ -71,7 +82,7 @@ println(const Args&... content)
           if constexpr (std::is_convertible_v<decltype(content), std::string>) {
               parse_string(output, content);
           } else {
-              output << content;
+              std::print("{}", content);
           }
       }(),
       ...);
@@ -113,6 +124,16 @@ println(const Args&... content)
  * tuipp::print("\[bold red]Hello, World!\[/]");
  * @endcode
  *
+ * ---
+ *
+ * It can also print iterables:
+ *
+ * @code{.cpp}
+ * std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+ *
+ * tuipp::print(vector);
+ * @endcode
+ *
  * @param content The items you want to print, they can be of any type and you can pass as many as
  * you want.
  */
@@ -120,14 +141,12 @@ template<typename... Args>
 void
 print(const Args&... content)
 {
-    std::ostream& output = std::cout;
-
     (
       [&]() {
           if constexpr (std::is_convertible_v<decltype(content), std::string>) {
-              parse_string(output, content);
+              parse_string(std::cout, content);
           } else {
-              output << content;
+              std::print("{}", content);
           }
       }(),
       ...);
