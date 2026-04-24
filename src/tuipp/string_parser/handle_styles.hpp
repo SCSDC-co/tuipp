@@ -281,10 +281,6 @@ handle_styles(std::basic_ostream<CharT>& stream,
                 styles.pop_back();
 
                 stream << termcolor::reset;
-
-                for (int i = 0; i < styles.size(); ++i) {
-                    styles[i].apply_styles(stream);
-                }
             } else if (style == Style::RESET_ALL) {
                 styles.clear();
 
