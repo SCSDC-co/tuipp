@@ -12,6 +12,7 @@
 
 namespace tuipp {
 
+/// Plenty of colors!
 namespace colors {
 
 template<typename CharT>

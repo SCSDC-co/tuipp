@@ -44,9 +44,9 @@ namespace tuipp {
  *   `bright green`, `bright grey`, `bright blue`, `bright magenta`, `bright yellow`, `bright cyan`,
  *   `bright white`
  *
- * - Effects: `bold`, `underline`, `blink`, `italic`
+ * - Effects: `bold`, `underline`, `blink`, `italic`, `dim`, `strikethrough`, `conceal`, `reverse`
  *
- * - Reset: `/` (for one style)
+ * - Reset: `/` (for one style), `reset` (for all styles)
  *
  * - For the background colors just type: `on <color>`
  *
@@ -110,9 +110,9 @@ println(const Args&... content)
  *   `bright green`, `bright grey`, `bright blue`, `bright magenta`, `bright yellow`, `bright cyan`,
  *   `bright white`
  *
- * - Effects: `bold`, `underline`, `blink`, `italic`
+ * - Effects: `bold`, `underline`, `blink`, `italic`, `dim`, `strikethrough`, `conceal`, `reverse`
  *
- * - Reset: `/` (for one style)
+ * - Reset: `/` (for one style), `reset` (for all styles)
  *
  * - For the background colors just type: `on <color>`
  *

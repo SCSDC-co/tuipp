@@ -49,6 +49,10 @@ enum class Style
     UNDERLINE,
     BLINK,
     ITALIC,
+    DIM,
+    REVERSE,
+    CONCEALED,
+    STRIKE_THROUGH,
     RESET,
     RESET_ALL
 };
@@ -109,6 +113,10 @@ inline const std::unordered_map<std::string, Style> token_to_style{
     { "underline", Style::UNDERLINE },
     { "blink", Style::BLINK },
     { "italic", Style::ITALIC },
+    { "dim", Style::DIM },
+    { "reverse", Style::REVERSE },
+    { "conceal", Style::CONCEALED },
+    { "strikethrough", Style::STRIKE_THROUGH },
     { "/", Style::RESET },
     { "reset", Style::RESET_ALL }
 };
@@ -225,6 +233,18 @@ apply_style(std::basic_ostream<CharT>& stream, const Style style)
             break;
         case Style::ITALIC:
             stream << termcolor::italic;
+            break;
+        case Style::DIM:
+            stream << termcolor::dark;
+            break;
+        case Style::CONCEALED:
+            stream << termcolor::concealed;
+            break;
+        case Style::STRIKE_THROUGH:
+            stream << termcolor::crossed;
+            break;
+        case Style::REVERSE:
+            stream << termcolor::reverse;
             break;
     }
 
