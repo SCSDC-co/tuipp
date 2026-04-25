@@ -145,7 +145,8 @@ Console::print_info(const bool& color) const
         std::cout << "Console properties:" << std::endl;
         std::cout << "  Size: " << console_size.width << "x" << console_size.height << std::endl;
         std::cout << "  Color support: " << this->get_color_support_string() << std::endl;
-        std::cout << "  ANSI support: " << this->get_support_ansi() << std::endl;
+        std::cout << "  ANSI support: " << (this->get_support_ansi() ? "true" : "false")
+                  << std::endl;
     }
 }
 

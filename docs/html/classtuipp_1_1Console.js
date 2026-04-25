@@ -3,8 +3,6 @@ var classtuipp_1_1Console =
     [ "TerminalSize", "structtuipp_1_1Console_1_1TerminalSize.html", "structtuipp_1_1Console_1_1TerminalSize" ],
     [ "ColorSystem", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a", [
       [ "NO_COLORS", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aad4128a5938053089e34da477f109f845", null ],
-      [ "LEGACY", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa4b55efc066309185aaf6ed520d721815", null ],
-      [ "STANDARD", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089", null ],
       [ "EIGHT_BIT", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae31e793163e70fa3b3f1645eba9e19e7", null ],
       [ "TRUE_COLOR", "classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae4d071ec65c53e6176eac3581f015c9a", null ]
     ] ],
