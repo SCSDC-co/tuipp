@@ -1,5 +1,5 @@
 <map id="include/tuipp/print.hpp" name="include/tuipp/print.hpp">
 <area shape="rect" id="Node000001" title="A utility to print text with markup support." alt="" coords="17,5,165,32"/>
-<area shape="rect" id="Node000002" href="$Console_8hpp.html" title="A class that represent a console." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="Node000002" href="$Console_8hpp.html" title="A class that represent a console and some other console utility." alt="" coords="5,80,177,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,46,93,81,89,79,89,50"/>
 </map>

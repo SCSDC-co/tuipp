@@ -115,42 +115,81 @@ $(function(){initNavTree('Console_8hpp_source.html','',''); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">   28</a></span>    <a class="code hl_function" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">Console</a>&amp; <a class="code hl_function" href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp; value)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="namespacetuipp.html#a795bf9ac1ac4736ba4f777aac3395d5e">print</a>(value);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">   27</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">ColorSystem</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aad4128a5938053089e34da477f109f845">   29</a></span>        <a class="code hl_enumvalue" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aad4128a5938053089e34da477f109f845">NO_COLORS</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa4b55efc066309185aaf6ed520d721815">   30</a></span>        <a class="code hl_enumvalue" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa4b55efc066309185aaf6ed520d721815">LEGACY</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089">   31</a></span>        <a class="code hl_enumvalue" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089">STANDARD</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae31e793163e70fa3b3f1645eba9e19e7">   32</a></span>        <a class="code hl_enumvalue" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae31e793163e70fa3b3f1645eba9e19e7">EIGHT_BIT</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae4d071ec65c53e6176eac3581f015c9a">   33</a></span>        <a class="code hl_enumvalue" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae4d071ec65c53e6176eac3581f015c9a">TRUE_COLOR</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">   35</a></span>    <a class="code hl_function" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">Console</a>&amp; <a class="code hl_function" href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">operator&lt;&lt;</a>(std::ostream&amp; (*f)(std::ostream&amp;))</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        std::cout &lt;&lt; f;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a0e3548b9ae638e0e736455191f1074d0">   36</a></span>    TUIPP_NODISCARD <a class="code hl_struct" href="structtuipp_1_1Console_1_1TerminalSize.html">TerminalSize</a> <a class="code hl_function" href="classtuipp_1_1Console.html#a0e3548b9ae638e0e736455191f1074d0">get_terminal_size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a2e25722188fa8890e1214000318aa7ef">   37</a></span>    TUIPP_NODISCARD <a class="code hl_enumeration" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">ColorSystem</a> <a class="code hl_function" href="classtuipp_1_1Console.html#a2e25722188fa8890e1214000318aa7ef">get_color_support</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
-</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#acb3c8321238f0fe8f57dd562ee1a37db">   39</a></span>    TUIPP_NODISCARD std::string <a class="code hl_function" href="classtuipp_1_1Console.html#acb3c8321238f0fe8f57dd562ee1a37db">get_color_support_string</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#ae3b4bd84d8ecd9d0771aa2a70a70b20f">   40</a></span>    TUIPP_NODISCARD <span class="keywordtype">bool</span> <a class="code hl_function" href="classtuipp_1_1Console.html#ae3b4bd84d8ecd9d0771aa2a70a70b20f">get_support_ansi</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#af26cfdcf8467dc26db179c5c2ef75fd8">   42</a></span>    TUIPP_NODISCARD <a class="code hl_struct" href="structtuipp_1_1Console_1_1TerminalSize.html">TerminalSize</a> <a class="code hl_function" href="classtuipp_1_1Console.html#af26cfdcf8467dc26db179c5c2ef75fd8">get_terminal_size</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a4110ec6127bf499cf6ed87384024c521">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classtuipp_1_1Console.html#a4110ec6127bf499cf6ed87384024c521">print_info</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; color) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">   44</a></span>    <a class="code hl_function" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">Console</a>()</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      : terminal_size(<a class="code hl_function" href="classtuipp_1_1Console.html#af26cfdcf8467dc26db179c5c2ef75fd8">get_terminal_size</a>()) {};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      : terminal_size(set_terminal_size())</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      , color_support(set_color_support())</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      , support_ansi(set_color_support()) {};</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    TerminalSize terminal_size{};</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">   50</a></span>    <a class="code hl_function" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">Console</a>&amp; <a class="code hl_function" href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp; value)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_function" href="namespacetuipp.html#a795bf9ac1ac4736ba4f777aac3395d5e">print</a>(value);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace tuipp</span></div>
-<div class="ttc" id="aclasstuipp_1_1Console_html_a3d4e63f8d4d199ddc1dcc0894685c8fe"><div class="ttname"><a href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">tuipp::Console::operator&lt;&lt;</a></div><div class="ttdeci">Console &amp; operator&lt;&lt;(std::ostream &amp;(*f)(std::ostream &amp;))</div><div class="ttdef"><b>Definition</b> Console.hpp:35</div></div>
-<div class="ttc" id="aclasstuipp_1_1Console_html_ac026f757d12c438c51ee02f7cc763ed1"><div class="ttname"><a href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">tuipp::Console::operator&lt;&lt;</a></div><div class="ttdeci">Console &amp; operator&lt;&lt;(const T &amp;value)</div><div class="ttdef"><b>Definition</b> Console.hpp:28</div></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// wth is this</span></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">   58</a></span>    <a class="code hl_function" href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">Console</a>&amp; <a class="code hl_function" href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">operator&lt;&lt;</a>(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      std::ostream&amp; (*f)(std::ostream&amp;) <span class="comment">// some C shenanigans for accepting stream manipulators</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    )</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        std::cout &lt;&lt; f;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    TerminalSize terminal_size{};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_enumeration" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">ColorSystem</a> color_support{};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">bool</span> support_ansi{};</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    TUIPP_NODISCARD <a class="code hl_struct" href="structtuipp_1_1Console_1_1TerminalSize.html">TerminalSize</a> set_terminal_size();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    TUIPP_NODISCARD <a class="code hl_enumeration" href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">ColorSystem</a> set_color_support();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    TUIPP_NODISCARD <span class="keywordtype">bool</span> set_support_ansi();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <span class="comment">// namespace tuipp</span></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a0e3548b9ae638e0e736455191f1074d0"><div class="ttname"><a href="classtuipp_1_1Console.html#a0e3548b9ae638e0e736455191f1074d0">tuipp::Console::get_terminal_size</a></div><div class="ttdeci">TUIPP_NODISCARD TerminalSize get_terminal_size() const</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a2e25722188fa8890e1214000318aa7ef"><div class="ttname"><a href="classtuipp_1_1Console.html#a2e25722188fa8890e1214000318aa7ef">tuipp::Console::get_color_support</a></div><div class="ttdeci">TUIPP_NODISCARD ColorSystem get_color_support() const</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8a"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8a">tuipp::Console::ColorSystem</a></div><div class="ttdeci">ColorSystem</div><div class="ttdef"><b>Definition</b> Console.hpp:28</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8aa4b55efc066309185aaf6ed520d721815"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa4b55efc066309185aaf6ed520d721815">tuipp::Console::LEGACY</a></div><div class="ttdeci">@ LEGACY</div><div class="ttdef"><b>Definition</b> Console.hpp:30</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089">tuipp::Console::STANDARD</a></div><div class="ttdeci">@ STANDARD</div><div class="ttdef"><b>Definition</b> Console.hpp:31</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8aad4128a5938053089e34da477f109f845"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aad4128a5938053089e34da477f109f845">tuipp::Console::NO_COLORS</a></div><div class="ttdeci">@ NO_COLORS</div><div class="ttdef"><b>Definition</b> Console.hpp:29</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8aae31e793163e70fa3b3f1645eba9e19e7"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae31e793163e70fa3b3f1645eba9e19e7">tuipp::Console::EIGHT_BIT</a></div><div class="ttdeci">@ EIGHT_BIT</div><div class="ttdef"><b>Definition</b> Console.hpp:32</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3c346646df4d1f393cc02bf45f22cd8aae4d071ec65c53e6176eac3581f015c9a"><div class="ttname"><a href="classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aae4d071ec65c53e6176eac3581f015c9a">tuipp::Console::TRUE_COLOR</a></div><div class="ttdeci">@ TRUE_COLOR</div><div class="ttdef"><b>Definition</b> Console.hpp:33</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a3d4e63f8d4d199ddc1dcc0894685c8fe"><div class="ttname"><a href="classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe">tuipp::Console::operator&lt;&lt;</a></div><div class="ttdeci">Console &amp; operator&lt;&lt;(std::ostream &amp;(*f)(std::ostream &amp;))</div><div class="ttdef"><b>Definition</b> Console.hpp:58</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_a4110ec6127bf499cf6ed87384024c521"><div class="ttname"><a href="classtuipp_1_1Console.html#a4110ec6127bf499cf6ed87384024c521">tuipp::Console::print_info</a></div><div class="ttdeci">void print_info(const bool &amp;color) const</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_ac026f757d12c438c51ee02f7cc763ed1"><div class="ttname"><a href="classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1">tuipp::Console::operator&lt;&lt;</a></div><div class="ttdeci">Console &amp; operator&lt;&lt;(const T &amp;value)</div><div class="ttdef"><b>Definition</b> Console.hpp:50</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_acb3c8321238f0fe8f57dd562ee1a37db"><div class="ttname"><a href="classtuipp_1_1Console.html#acb3c8321238f0fe8f57dd562ee1a37db">tuipp::Console::get_color_support_string</a></div><div class="ttdeci">TUIPP_NODISCARD std::string get_color_support_string() const</div></div>
 <div class="ttc" id="aclasstuipp_1_1Console_html_ace11c336b83c77e9541c9734e6ee24b9"><div class="ttname"><a href="classtuipp_1_1Console.html#ace11c336b83c77e9541c9734e6ee24b9">tuipp::Console::Console</a></div><div class="ttdeci">Console()</div><div class="ttdef"><b>Definition</b> Console.hpp:44</div></div>
-<div class="ttc" id="aclasstuipp_1_1Console_html_af26cfdcf8467dc26db179c5c2ef75fd8"><div class="ttname"><a href="classtuipp_1_1Console.html#af26cfdcf8467dc26db179c5c2ef75fd8">tuipp::Console::get_terminal_size</a></div><div class="ttdeci">TUIPP_NODISCARD TerminalSize get_terminal_size()</div></div>
+<div class="ttc" id="aclasstuipp_1_1Console_html_ae3b4bd84d8ecd9d0771aa2a70a70b20f"><div class="ttname"><a href="classtuipp_1_1Console.html#ae3b4bd84d8ecd9d0771aa2a70a70b20f">tuipp::Console::get_support_ansi</a></div><div class="ttdeci">TUIPP_NODISCARD bool get_support_ansi() const</div></div>
 <div class="ttc" id="anamespacetuipp_html"><div class="ttname"><a href="namespacetuipp.html">tuipp</a></div><div class="ttdef"><b>Definition</b> colors.hpp:13</div></div>
 <div class="ttc" id="anamespacetuipp_html_a795bf9ac1ac4736ba4f777aac3395d5e"><div class="ttname"><a href="namespacetuipp.html#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a></div><div class="ttdeci">void print(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:142</div></div>
 <div class="ttc" id="aprint_8hpp_html"><div class="ttname"><a href="print_8hpp.html">print.hpp</a></div><div class="ttdoc">A utility to print text with markup support.</div></div>

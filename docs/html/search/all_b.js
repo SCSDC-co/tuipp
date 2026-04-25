@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['terminalsize_0',['TerminalSize',['../structtuipp_1_1Console_1_1TerminalSize.html',1,'tuipp::Console']]],
-  ['tuipp_1',['tuipp',['../namespacetuipp.html',1,'']]],
-  ['tuipp_3a_3acolors_2',['colors',['../namespacetuipp_1_1colors.html',1,'tuipp']]]
+  ['red_0',['red',['../namespacetuipp_1_1colors.html#a617e75f6262c7193dcca9083c1666a5a',1,'tuipp::colors']]],
+  ['reset_1',['reset',['../namespacetuipp_1_1colors.html#ae5b3af666f1d33a6f0d9aabc8f0ebb12',1,'tuipp::colors']]]
 ];

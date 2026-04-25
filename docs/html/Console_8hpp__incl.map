@@ -1,5 +1,5 @@
 <map id="include/tuipp/Console.hpp" name="include/tuipp/Console.hpp">
-<area shape="rect" id="Node000001" title="A class that represent a console." alt="" coords="74,5,246,32"/>
+<area shape="rect" id="Node000001" title="A class that represent a console and some other console utility." alt="" coords="74,5,246,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,35,74,74,71,70,140,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,80,226,107"/>

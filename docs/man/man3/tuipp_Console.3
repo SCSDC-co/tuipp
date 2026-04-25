@@ -13,33 +13,77 @@ tuipp::Console
 .RI "struct \fBTerminalSize\fP"
 .br
 .in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBColorSystem\fP { \fBNO_COLORS\fP, \fBLEGACY\fP, \fBSTANDARD\fP, \fBEIGHT_BIT\fP, \fBTRUE_COLOR\fP }"
+.br
+.in -1c
 .SS "Public Member Functions"
 
 .in +1c
+.ti -1c
+.RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBget_terminal_size\fP () const"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD \fBColorSystem\fP \fBget_color_support\fP () const"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD std::string \fBget_color_support_string\fP () const"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD bool \fBget_support_ansi\fP () const"
+.br
+.ti -1c
+.RI "void \fBprint_info\fP (const bool &color) const"
+.br
+.ti -1c
+.RI "\fBConsole\fP ()"
+.br
 .ti -1c
 .RI "template<typename T> \fBConsole\fP & \fBoperator<<\fP (const T &value)"
 .br
 .ti -1c
 .RI "\fBConsole\fP & \fBoperator<<\fP (std::ostream &(*f)(std::ostream &))"
 .br
-.ti -1c
-.RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBget_terminal_size\fP ()"
-.br
-.ti -1c
-.RI "\fBConsole\fP ()"
-.br
 .in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBtuipp::Console::ColorSystem\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BINO_COLORS \fP
+.TP
+\f(BILEGACY \fP
+.TP
+\f(BISTANDARD \fP
+.TP
+\f(BIEIGHT_BIT \fP
+.TP
+\f(BITRUE_COLOR \fP
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "tuipp::Console::Console ()\fR [inline]\fP"
 
 .SH "Member Function Documentation"
 .PP 
-.SS "TUIPP_NODISCARD \fBTerminalSize\fP tuipp::Console::get_terminal_size ()"
+.SS "TUIPP_NODISCARD \fBColorSystem\fP tuipp::Console::get_color_support () const"
+
+.SS "TUIPP_NODISCARD std::string tuipp::Console::get_color_support_string () const"
+
+.SS "TUIPP_NODISCARD bool tuipp::Console::get_support_ansi () const"
+
+.SS "TUIPP_NODISCARD \fBTerminalSize\fP tuipp::Console::get_terminal_size () const"
 
 .SS "template<typename T> \fBConsole\fP & tuipp::Console::operator<< (const T & value)\fR [inline]\fP"
 
 .SS "\fBConsole\fP & tuipp::Console::operator<< (std::ostream &(* f )(std::ostream &))\fR [inline]\fP"
+
+.SS "void tuipp::Console::print_info (const bool & color) const"
 
 
 .SH "Author"

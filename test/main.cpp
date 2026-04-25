@@ -21,11 +21,12 @@ main()
     tuipp::println("[green]This is green [bold]this is bold and green[reset] this is normal");
     tuipp::println("[green]Green text [bold]green and bold text[/] still green[/]");
 
-    tuipp::println("[green]Terminal size: [/]", console_size.width, "x", console_size.height);
-
     tuipp::println("[green]It prints iterables: [/]", vector);
 
     console << "[bold green]Console output![/]" << std::endl << 10 << "." << std::endl;
+
+    console.print_info(true);
+    console.print_info(false);
 
     std::cout << tuipp::colors::blue << "Blue text " << tuipp::colors::on_grey << "cool text"
               << tuipp::colors::reset << " normal text" << std::endl;
