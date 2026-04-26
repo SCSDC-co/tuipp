@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_0',['width',['../structtuipp_1_1Console_1_1TerminalSize.html#a9b97a21147c5d89fa4a6f9952572624c',1,'tuipp::Console::TerminalSize']]]
+  ['height_0',['height',['../structtuipp_1_1console__info_1_1TerminalSize.html#adade976788fd6ec629f3c8defedef3e5',1,'tuipp::console_info::TerminalSize']]]
 ];

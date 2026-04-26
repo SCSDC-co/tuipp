@@ -31,7 +31,6 @@ var namespacetuipp =
       [ "white", "namespacetuipp_1_1colors.html#abd58ef049ee2f707a6549ea27457861e", null ],
       [ "yellow", "namespacetuipp_1_1colors.html#a9ab4929b23f09239cff982e41bc1df58", null ]
     ] ],
-    [ "Console", "classtuipp_1_1Console.html", "classtuipp_1_1Console" ],
-    [ "print", "namespacetuipp.html#a795bf9ac1ac4736ba4f777aac3395d5e", null ],
-    [ "println", "namespacetuipp.html#a6ff07c907c89acf092f5f6310f11f857", null ]
+    [ "console_info", "namespacetuipp_1_1console__info.html", "namespacetuipp_1_1console__info" ],
+    [ "Console", "classtuipp_1_1Console.html", "classtuipp_1_1Console" ]
 ];

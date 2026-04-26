@@ -1,0 +1,62 @@
+.TH "include/tuipp/console_info.hpp" 3 "Version 0.0.1" "TUI++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/tuipp/console_info.hpp \- A header that contains useful methods and types for getting the console informations\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtuipp::console_info::TerminalSize\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBtuipp\fP"
+.br
+.ti -1c
+.RI "namespace \fBtuipp::console_info\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBtuipp::console_info::ColorSystem\fP { \fBtuipp::console_info::NO_COLORS\fP, \fBtuipp::console_info::EIGHT_BIT\fP, \fBtuipp::console_info::TRUE_COLOR\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBtuipp::console_info::get_terminal_size\fP ()"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD bool \fBtuipp::console_info::get_support_ansi\fP ()"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD \fBColorSystem\fP \fBtuipp::console_info::get_color_support\fP ()"
+.br
+.RI "adapted from: https://github.com/spectreconsole/spectre.console/blob/main/src/Spectre.Console.Ansi/ColorSystemDetector.cs thanks guys ❤ love you all "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A header that contains useful methods and types for getting the console informations\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Giuliano De Amicis 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TUI++ from the source code\&.

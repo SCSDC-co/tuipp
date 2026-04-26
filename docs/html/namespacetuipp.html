@@ -97,126 +97,13 @@ $(function(){initNavTree('namespacetuipp.html','',''); });
 Namespaces</h2></td></tr>
 <tr class="memitem:colors" id="r_colors"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp_1_1colors.html">colors</a></td></tr>
 <tr class="memdesc:namespacetuipp_1_1colors"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plenty of colors! <br /></td></tr>
+<tr class="memitem:console_5Finfo" id="r_console_5Finfo"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacetuipp_1_1console__info.html">console_info</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:Console" id="r_Console"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classtuipp_1_1Console.html">Console</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the class that represent a console.  <a href="classtuipp_1_1Console.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6ff07c907c89acf092f5f6310f11f857" id="r_a6ff07c907c89acf092f5f6310f11f857"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a6ff07c907c89acf092f5f6310f11f857 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ff07c907c89acf092f5f6310f11f857">println</a> (const Args &amp;... content)</td></tr>
-<tr class="memdesc:a6ff07c907c89acf092f5f6310f11f857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an output to the screen with a new line at the end (supports markup).  <br /></td></tr>
-<tr class="memitem:a795bf9ac1ac4736ba4f777aac3395d5e" id="r_a795bf9ac1ac4736ba4f777aac3395d5e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a795bf9ac1ac4736ba4f777aac3395d5e template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a795bf9ac1ac4736ba4f777aac3395d5e">print</a> (const Args &amp;... content)</td></tr>
-<tr class="memdesc:a795bf9ac1ac4736ba4f777aac3395d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an output to the screen without a new line at the end (supports markup).  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a795bf9ac1ac4736ba4f777aac3395d5e" name="a795bf9ac1ac4736ba4f777aac3395d5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a795bf9ac1ac4736ba4f777aac3395d5e">&#9670;&#160;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void tuipp::print </td>
-          <td>(</td>
-          <td class="paramtype">const Args &amp;...</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print an output to the screen without a new line at the end (supports markup). </p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
-Examples:</h2>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[bold green]Hello, World![/]&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(</div>
-<div class="line"><span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[/] this is still green[/]&quot;</span></div>
-<div class="line">);</div>
-<div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[blue]Number of files: [/]&quot;</span>, 10, <span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[reset] this is normal&quot;</span>);</div>
-<div class="ttc" id="anamespacetuipp_html_a795bf9ac1ac4736ba4f777aac3395d5e"><div class="ttname"><a href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a></div><div class="ttdeci">void print(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen without a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:142</div></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
-Styles:</h2>
-<ul>
-<li>Foreground colors: <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">grey</span>, <span class="tt">blue</span>, <span class="tt">magenta</span>, <span class="tt">yellow</span>, <span class="tt">white</span>, <span class="tt">bright red</span>, <span class="tt">bright green</span>, <span class="tt">bright grey</span>, <span class="tt">bright blue</span>, <span class="tt">bright magenta</span>, <span class="tt">bright yellow</span>, <span class="tt">bright cyan</span>, <span class="tt">bright white</span></li>
-<li>Effects: <span class="tt">bold</span>, <span class="tt">underline</span>, <span class="tt">blink</span>, <span class="tt">italic</span>, <span class="tt">dim</span>, <span class="tt">strikethrough</span>, <span class="tt">conceal</span>, <span class="tt">reverse</span></li>
-<li>Reset: <span class="tt">/</span> (for one style), <span class="tt">reset</span> (for all styles)</li>
-<li>For the background colors just type: <span class="tt">on &lt;color&gt;</span></li>
-</ul>
-<hr  />
-<p>You can also escape markup brackets using a backslash:</p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(<span class="stringliteral">&quot;\&zwj;[bold red]Hello, World!\&zwj;[/]&quot;</span>);</div>
-</div><!-- fragment --><hr  />
-<p>It can also print iterables:</p>
-<div class="fragment"><div class="line">std::vector&lt;int&gt; vector{ { 1, 2, 3, 4, 5, 6 } };</div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_function" href="#a795bf9ac1ac4736ba4f777aac3395d5e">tuipp::print</a>(vector);</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">content</td><td>The items you want to print, they can be of any type and you can pass as many as you want. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6ff07c907c89acf092f5f6310f11f857" name="a6ff07c907c89acf092f5f6310f11f857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff07c907c89acf092f5f6310f11f857">&#9670;&#160;</a></span>println()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void tuipp::println </td>
-          <td>(</td>
-          <td class="paramtype">const Args &amp;...</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print an output to the screen with a new line at the end (supports markup). </p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
-Examples:</h2>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[bold green]Hello, World![/]&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(</div>
-<div class="line"><span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[/] this is still green[/]&quot;</span></div>
-<div class="line">);</div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[blue]Number of files: [/]&quot;</span>, 10, <span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;[green]This is green [bold]this is bold and green[reset] this is normal&quot;</span>);</div>
-<div class="ttc" id="anamespacetuipp_html_a6ff07c907c89acf092f5f6310f11f857"><div class="ttname"><a href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a></div><div class="ttdeci">void println(const Args &amp;... content)</div><div class="ttdoc">Print an output to the screen with a new line at the end (supports markup).</div><div class="ttdef"><b>Definition</b> print.hpp:76</div></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
-Styles:</h2>
-<ul>
-<li>Foreground colors: <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">grey</span>, <span class="tt">blue</span>, <span class="tt">magenta</span>, <span class="tt">yellow</span>, <span class="tt">white</span>, <span class="tt">bright red</span>, <span class="tt">bright green</span>, <span class="tt">bright grey</span>, <span class="tt">bright blue</span>, <span class="tt">bright magenta</span>, <span class="tt">bright yellow</span>, <span class="tt">bright cyan</span>, <span class="tt">bright white</span></li>
-<li>Effects: <span class="tt">bold</span>, <span class="tt">underline</span>, <span class="tt">blink</span>, <span class="tt">italic</span>, <span class="tt">dim</span>, <span class="tt">strikethrough</span>, <span class="tt">conceal</span>, <span class="tt">reverse</span></li>
-<li>Reset: <span class="tt">/</span> (for one style), <span class="tt">reset</span> (for all styles)</li>
-<li>For the background colors just type: <span class="tt">on &lt;color&gt;</span></li>
-</ul>
-<hr  />
-<p>You can also escape markup brackets using a backslash:</p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(<span class="stringliteral">&quot;\&zwj;[bold red]Hello, World!\&zwj;[/]&quot;</span>);</div>
-</div><!-- fragment --><hr  />
-<p>It can also print iterables:</p>
-<div class="fragment"><div class="line">std::vector&lt;int&gt; vector{ { 1, 2, 3, 4, 5, 6 } };</div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_function" href="#a6ff07c907c89acf092f5f6310f11f857">tuipp::println</a>(vector);</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">content</td><td>The items you want to print, they can be of any type and you can pass as many as you want. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

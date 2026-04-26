@@ -3,12 +3,12 @@ var indexSectionsWithContent =
   0: "bceghimnoprstuwy",
   1: "ct",
   2: "t",
-  3: "cp",
+  3: "c",
   4: "bcgimopruwy",
-  5: "hw",
+  5: "chstw",
   6: "c",
   7: "ent",
-  8: "eps"
+  8: "es"
 };
 
 var indexSectionNames =

@@ -1,0 +1,65 @@
+.TH "tuipp::console_info" 3 "Version 0.0.1" "TUI++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tuipp::console_info
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTerminalSize\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBColorSystem\fP { \fBNO_COLORS\fP, \fBEIGHT_BIT\fP, \fBTRUE_COLOR\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBget_terminal_size\fP ()"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD bool \fBget_support_ansi\fP ()"
+.br
+.ti -1c
+.RI "TUIPP_NODISCARD \fBColorSystem\fP \fBget_color_support\fP ()"
+.br
+.RI "adapted from: https://github.com/spectreconsole/spectre.console/blob/main/src/Spectre.Console.Ansi/ColorSystemDetector.cs thanks guys ❤ love you all "
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBtuipp::console_info::ColorSystem\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BINO_COLORS \fP
+no color support, it disables every color 
+.TP
+\f(BIEIGHT_BIT \fP
+16 colors palette 
+.TP
+\f(BITRUE_COLOR \fP
+full 16 million color support 
+.SH "Function Documentation"
+.PP 
+.SS "TUIPP_NODISCARD \fBColorSystem\fP tuipp::console_info::get_color_support ()\fR [inline]\fP"
+
+.PP
+adapted from: https://github.com/spectreconsole/spectre.console/blob/main/src/Spectre.Console.Ansi/ColorSystemDetector.cs thanks guys ❤ love you all 
+.SS "TUIPP_NODISCARD bool tuipp::console_info::get_support_ansi ()\fR [inline]\fP"
+
+.SS "TUIPP_NODISCARD \fBTerminalSize\fP tuipp::console_info::get_terminal_size ()\fR [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TUI++ from the source code\&.

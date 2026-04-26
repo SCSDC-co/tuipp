@@ -1,19 +1,29 @@
 <map id="include/tuipp/Console.hpp" name="include/tuipp/Console.hpp">
-<area shape="rect" id="Node000001" title="A class that represent a console and some other console utility." alt="" coords="74,5,246,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,35,74,74,71,70,140,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,80,226,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,30,163,65,158,63,159,35"/>
-<area shape="rect" id="Node000004" href="$print_8hpp.html" title="A utility to print text with markup support." alt="" coords="250,80,353,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,30,266,72,261,73,184,35"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="91,163,162,189"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="277,107,169,158,167,154,272,108"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="186,163,254,189"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="291,106,245,154,242,150,286,108"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="278,163,325,189"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="303,105,304,149,299,146,300,109"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="348,163,402,189"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="314,105,356,152,351,151,312,110"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="426,155,590,197"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="334,105,444,148,438,149,333,110"/>
+<area shape="rect" id="Node000001" title="A class that represent a console with some useful utilities." alt="" coords="190,5,361,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,88,77,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,35,89,83,85,84,81,80,87,77,233,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,88,168,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,34,171,82,168,78,256,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,88,239,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="268,31,236,78,232,74,264,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="178,171,232,197"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="276,31,269,74,253,124,228,161,225,157,248,122,264,73,272,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="542,80,706,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="331,30,529,77,524,79,330,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="256,171,388,197"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="281,30,297,79,318,157,313,155,292,81,278,35"/>
+<area shape="rect" id="Node000008" href="$console__info_8hpp.html" title="A header that contains useful methods and types for getting the console informations." alt="" coords="367,88,518,115"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="302,30,406,81,400,82,301,35"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="408,115,247,171,246,166,403,115"/>
+<area shape="poly" id="edge14_Node000008_Node000007" title=" " alt="" coords="426,114,354,165,352,160,421,116"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="780,171,854,197"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="496,113,530,120,767,170,762,170,528,125,496,118"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="412,171,472,197"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="444,113,444,157,440,154,440,117"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="497,171,561,197"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="457,113,507,161,502,160,455,118"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="585,171,644,197"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="470,113,576,164,571,164,469,118"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="668,171,755,197"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="485,113,658,166,652,166,484,118"/>
 </map>

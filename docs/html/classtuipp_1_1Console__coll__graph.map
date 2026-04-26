@@ -1,5 +1,5 @@
 <map id="tuipp::Console" name="tuipp::Console">
-<area shape="rect" id="Node000001" title=" " alt="" coords="47,104,152,131"/>
-<area shape="rect" id="Node000002" href="$structtuipp_1_1Console_1_1TerminalSize.html" title=" " alt="" coords="5,5,194,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,46,102,105,97,103,97,49"/>
+<area shape="rect" id="Node000001" title="This is the class that represent a console." alt="" coords="18,120,123,147"/>
+<area shape="rect" id="Node000002" href="$structtuipp_1_1console__info_1_1TerminalSize.html" title=" " alt="" coords="5,5,136,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,62,73,120,68,119,68,65"/>
 </map>

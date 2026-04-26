@@ -2,8 +2,8 @@
 .ad l
 .nh
 .SH NAME
-include tuipp colors\&.hpp Console\&.hpp print\&.hpp 
+include tuipp colors\&.hpp Console\&.hpp console_info\&.hpp 
 .PP
-tuipp colors\&.hpp Console\&.hpp print\&.hpp 
+tuipp colors\&.hpp Console\&.hpp console_info\&.hpp 
 .PP
 

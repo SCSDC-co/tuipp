@@ -14,8 +14,6 @@ project(
         "A header-only simple TUI library heavily inspired by rich and Spectre.Console"
 )
 
-add_subdirectory(src/tuipp/)
-
 option(TUIPP_BUILD_TESTS "Build tests" OFF)
 option(TUIPP_BUILD_DOCS "Build the docs" OFF)
 
@@ -23,7 +21,6 @@ if(TUIPP_BUILD_TESTS)
     add_executable(tuipp test/main.cpp)
 
     target_include_directories(tuipp PUBLIC ${CMAKE_SOURCE_DIR}/include)
-    target_link_libraries(tuipp PUBLIC tuipp_console)
     set_target_properties(tuipp PROPERTIES CXX_EXTENSIONS OFF)
 endif()
 

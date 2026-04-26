@@ -7,42 +7,9 @@ tuipp::Console \- This is the class that represent a console\&.
 .SH SYNOPSIS
 .br
 .PP
-.SS "Classes"
-
-.in +1c
-.ti -1c
-.RI "struct \fBTerminalSize\fP"
-.br
-.in -1c
-.SS "Public Types"
-
-.in +1c
-.ti -1c
-.RI "enum \fBColorSystem\fP { \fBNO_COLORS\fP, \fBEIGHT_BIT\fP, \fBTRUE_COLOR\fP }"
-.br
-.in -1c
 .SS "Public Member Functions"
 
 .in +1c
-.ti -1c
-.RI "TUIPP_NODISCARD \fBTerminalSize\fP \fBget_terminal_size\fP () const"
-.br
-.ti -1c
-.RI "TUIPP_NODISCARD \fBColorSystem\fP \fBget_color_support\fP () const"
-.br
-.ti -1c
-.RI "TUIPP_NODISCARD std::string \fBget_color_support_string\fP () const"
-.br
-.ti -1c
-.RI "TUIPP_NODISCARD bool \fBget_support_ansi\fP () const"
-.br
-.ti -1c
-.RI "void \fBprint_info\fP (const bool &color) const"
-.br
-.RI "A utility to print the console info in a nice format\&. "
-.ti -1c
-.RI "\fBConsole\fP ()"
-.br
 .ti -1c
 .RI "template<typename T> \fBConsole\fP & \fBoperator<<\fP (const T &value)"
 .br
@@ -52,54 +19,61 @@ tuipp::Console \- This is the class that represent a console\&.
 .br
 .RI "A << operator overload made for printing stream manipulators like \fRstd::endl\fP\&. "
 .in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename\&.\&.\&. Args> static void \fBprintln\fP (const Args &\&.\&.\&. content)"
+.br
+.RI "Print an output to the screen with a new line at the end (supports markup)\&. "
+.ti -1c
+.RI "template<typename\&.\&.\&. Args> static void \fBprint\fP (const Args &\&.\&.\&. content)"
+.br
+.RI "Print an output to the screen without a new line at the end (supports markup)\&. "
+.ti -1c
+.RI "static TUIPP_NODISCARD std::string \fBget_color_support_string\fP ()"
+.br
+.ti -1c
+.RI "static void \fBprint_info\fP (const bool &color)"
+.br
+.RI "A utility to print the console info in a nice format\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBconsole_info::TerminalSize\fP \fBterminal_size\fP"
+.br
+.ti -1c
+.RI "static \fBconsole_info::ColorSystem\fP \fBcolor_support\fP"
+.br
+.ti -1c
+.RI "static bool \fBsupport_ansi\fP { \fBtuipp::console_info::get_support_ansi\fP() }"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
 This is the class that represent a console\&. 
 
-
-.SS "Properties"
-.IP "\(bu" 2
-\fBTerminalSize\fP: a struct that represent the dimensions of the console (width and height)
-.IP "\(bu" 2
-\fBColorSystem\fP: an enum to represent the color system supported by the console
-.PP
+Most of its methods and properties are static, so you can use them without creating it\&.
 .SS "Examples"
 .PP
 .nf
 tuipp::Console console{}; // creates the console
 
 console << "[green]Print to the screen using[/] << [green]operator overload![/]" << std::endl;
-console << "you can" << "chain them!" << std::endl;
+console << "you can" << " " << "chain them!" << std::endl;
 
-console\&.print_info(true); // print the console properties in a nice format!
+tuipp::Console::print("[green]This is a static member![/]");
+tuipp::Console::println("[green]Also this![/]");
+
+tuipp::Console::print_info(true);
 .fi
 .PP
  
-.SH "Member Enumeration Documentation"
-.PP 
-.SS "enum \fBtuipp::Console::ColorSystem\fP"
-
-.PP
-\fBEnumerator\fP
-.in +1c
-.TP
-\f(BINO_COLORS \fP
-no color support, it disables every color 
-.TP
-\f(BIEIGHT_BIT \fP
-16 colors palette 
-.TP
-\f(BITRUE_COLOR \fP
-full 16 million color support 
-.SH "Constructor & Destructor Documentation"
-.PP 
-.SS "tuipp::Console::Console ()\fR [inline]\fP"
-
 .SH "Member Function Documentation"
 .PP 
-.SS "TUIPP_NODISCARD \fBColorSystem\fP tuipp::Console::get_color_support () const"
-
-.SS "TUIPP_NODISCARD std::string tuipp::Console::get_color_support_string () const"
+.SS "TUIPP_NODISCARD std::string tuipp::Console::get_color_support_string ()\fR [inline]\fP, \fR [static]\fP"
 
 .PP
 \fBReturns\fP
@@ -107,10 +81,6 @@ full 16 million color support
 the color support as a string 
 .RE
 .PP
-
-.SS "TUIPP_NODISCARD bool tuipp::Console::get_support_ansi () const"
-
-.SS "TUIPP_NODISCARD \fBTerminalSize\fP tuipp::Console::get_terminal_size () const"
 
 .SS "template<typename T> \fBConsole\fP & tuipp::Console::operator<< (const T & value)\fR [inline]\fP"
 
@@ -120,10 +90,156 @@ A << operator overload made for printing things in the \fRstd::cout\fP style\&.
 
 .PP
 A << operator overload made for printing stream manipulators like \fRstd::endl\fP\&. 
-.SS "void tuipp::Console::print_info (const bool & color) const"
+.SS "template<typename\&.\&.\&. Args> void tuipp::Console::print (const Args &\&.\&.\&. content)\fR [inline]\fP, \fR [static]\fP"
+
+.PP
+Print an output to the screen without a new line at the end (supports markup)\&. 
+.SS "Examples:"
+.PP
+.nf
+tuipp::Console::print("[bold green]Hello, World![/]");
+tuipp::Console::print(
+"[green]This is green [bold]this is bold and green[/] this is still green[/]"
+);
+tuipp::Console::print("[blue]Number of files: [/]", 10, "\&.");
+tuipp::Console::print("[green]This is green [bold]this is bold and green[reset] this is
+normal");
+.fi
+.PP
+.SS "Styles:"
+.IP "\(bu" 2
+Foreground colors: \fRred\fP, \fRgreen\fP, \fRgrey\fP, \fRblue\fP, \fRmagenta\fP, \fRyellow\fP, \fRwhite\fP, \fRbright red\fP, \fRbright green\fP, \fRbright grey\fP, \fRbright blue\fP, \fRbright magenta\fP, \fRbright yellow\fP, \fRbright cyan\fP, \fRbright white\fP
+.IP "\(bu" 2
+Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP, \fRdim\fP, \fRstrikethrough\fP, \fRconceal\fP, \fRreverse\fP
+.IP "\(bu" 2
+Reset: \fR/\fP (for one style), \fRreset\fP (for all styles)
+.IP "\(bu" 2
+For the background colors just type: \fRon <color>\fP
+.PP
+
+.PP
+.PP
+
+.PP
+You can also escape markup brackets using a backslash:
+
+.PP
+.PP
+.nf
+tuipp::Console::print("\\[bold red]Hello, World!\\[/]");
+.fi
+.PP
+
+.PP
+.PP
+
+.PP
+It can also print iterables:
+
+.PP
+.PP
+.nf
+std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+
+tuipp::Console::print(vector);
+.fi
+.PP
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontent\fP The items you want to print, they can be of any type and you can pass as many as you want\&. 
+.RE
+.PP
+
+.SS "void tuipp::Console::print_info (const bool & color)\fR [inline]\fP, \fR [static]\fP"
 
 .PP
 A utility to print the console info in a nice format\&. 
+.SS "template<typename\&.\&.\&. Args> void tuipp::Console::println (const Args &\&.\&.\&. content)\fR [inline]\fP, \fR [static]\fP"
+
+.PP
+Print an output to the screen with a new line at the end (supports markup)\&. 
+.SS "Examples:"
+.PP
+.nf
+tuipp::Console::println("[bold green]Hello, World![/]");
+tuipp::Console::println(
+"[green]This is green [bold]this is bold and green[/] this is still green[/]"
+);
+tuipp::Console::println("[blue]Number of files: [/]", 10, "\&.");
+tuipp::Console::println("[green]This is green [bold]this is bold and green[reset] this is
+normal");
+.fi
+.PP
+.SS "Styles:"
+.IP "\(bu" 2
+Foreground colors: \fRred\fP, \fRgreen\fP, \fRgrey\fP, \fRblue\fP, \fRmagenta\fP, \fRyellow\fP, \fRwhite\fP, \fRbright red\fP, \fRbright green\fP, \fRbright grey\fP, \fRbright blue\fP, \fRbright magenta\fP, \fRbright yellow\fP, \fRbright cyan\fP, \fRbright white\fP
+.IP "\(bu" 2
+Effects: \fRbold\fP, \fRunderline\fP, \fRblink\fP, \fRitalic\fP, \fRdim\fP, \fRstrikethrough\fP, \fRconceal\fP, \fRreverse\fP
+.IP "\(bu" 2
+Reset: \fR/\fP (for one style), \fRreset\fP (for all styles)
+.IP "\(bu" 2
+For the background colors just type: \fRon <color>\fP
+.PP
+
+.PP
+.PP
+
+.PP
+You can also escape markup brackets using a backslash:
+
+.PP
+.PP
+.nf
+tuipp::Console::println("\\[bold red]Hello, World!\\[/]");
+.fi
+.PP
+
+.PP
+.PP
+
+.PP
+It can also print iterables:
+
+.PP
+.PP
+.nf
+std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+
+tuipp::Console::println(vector);
+.fi
+.PP
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontent\fP The items you want to print, they can be of any type and you can pass as many as you want\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBconsole_info::ColorSystem\fP tuipp::Console::color_support\fR [inline]\fP, \fR [static]\fP"
+\fBInitial value:\fP
+.nf
+{
+        tuipp::console_info::get_color_support()
+    }
+.PP
+.fi
+
+.SS "bool tuipp::Console::support_ansi { \fBtuipp::console_info::get_support_ansi\fP() }\fR [inline]\fP, \fR [static]\fP"
+
+.SS "\fBconsole_info::TerminalSize\fP tuipp::Console::terminal_size\fR [inline]\fP, \fR [static]\fP"
+\fBInitial value:\fP
+.nf
+{
+        tuipp::console_info::get_terminal_size()
+    }
+.PP
+.fi
+
 
 .SH "Author"
 .PP 

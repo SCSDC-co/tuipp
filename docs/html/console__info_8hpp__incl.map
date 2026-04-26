@@ -1,0 +1,17 @@
+<map id="include/tuipp/console_info.hpp" name="include/tuipp/console_info.hpp">
+<area shape="rect" id="Node000001" title="A header that contains useful methods and types for getting the console informations." alt="" coords="235,5,378,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,80,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,51,95,95,94,90,238,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,96,165,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,48,176,92,174,87,260,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,96,253,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,48,247,88,244,83,282,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="277,96,336,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="308,47,309,82,304,79,305,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="360,96,413,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="328,46,366,85,361,84,326,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="438,96,525,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="352,46,443,89,437,89,351,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="548,96,681,123"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="379,44,554,91,549,92,378,49"/>
+</map>

@@ -4,7 +4,6 @@
 
 #include "tuipp/Console.hpp"
 #include "tuipp/colors.hpp"
-#include "tuipp/print.hpp"
 
 int
 main()
@@ -12,25 +11,26 @@ main()
     tuipp::Console console{};
     std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
 
-    tuipp::Console::TerminalSize console_size = console.get_terminal_size();
+    tuipp::console_info::TerminalSize console_size = console.terminal_size;
 
-    tuipp::println("Hello, World!");
-    tuipp::println("[green]Green text[/]");
-    tuipp::println("\\[green]Escaped markup\\[/]");
-    tuipp::println("[green bold on gray]Gorgeous text![/] This is normal text!");
-    tuipp::println("[green]This is green [bold]this is bold and green[reset] this is normal");
-    tuipp::println("[green]Green text [bold]green and bold text[/] still green[/]");
+    tuipp::Console::println("Hello, World!");
+    tuipp::Console::println("[green]Green text[/]");
+    tuipp::Console::println("\\[green]Escaped markup\\[/]");
+    tuipp::Console::println("[green bold on gray]Gorgeous text![/] This is normal text!");
+    tuipp::Console::println(
+      "[green]This is green [bold]this is bold and green[reset] this is normal");
+    tuipp::Console::println("[green]Green text [bold]green and bold text[/] still green[/]");
 
-    tuipp::println("[green]It prints iterables: [/]", vector);
+    tuipp::Console::println("[green]It prints iterables: [/]", vector);
 
     console << "[bold green]Console output![/]" << std::endl << 10 << "." << std::endl;
 
-    console.print_info(true);
+    tuipp::Console::print_info(true);
 
-    tuipp::println("[dim]Dim text![/]");
-    tuipp::println("[reverse]Reverse text![/]");
-    tuipp::println("[conceal]Conceal text![/]");
-    tuipp::println("[strikethrough]Strikethrough text![/]");
+    tuipp::Console::println("[dim]Dim text![/]");
+    tuipp::Console::println("[reverse]Reverse text![/]");
+    tuipp::Console::println("[conceal]Conceal text![/]");
+    tuipp::Console::println("[strikethrough]Strikethrough text![/]");
 
     std::cout << tuipp::colors::blue << "Blue text " << tuipp::colors::on_grey << "cool text"
               << tuipp::colors::reset << " normal text" << std::endl;
