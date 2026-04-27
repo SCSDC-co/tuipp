@@ -27,7 +27,7 @@ parse_string(std::basic_ostream<CharT>& stream, const std::string& string)
         char current_char{ string[i] };
         char next_char{ string[i + 1] };
 
-        if (current_char == '[' && prev_char != '\\') {
+        if (current_char == '[' && prev_char != '[' && next_char != '[') {
             std::string buffer{};
 
             while (current_char != ']') {
@@ -43,9 +43,13 @@ parse_string(std::basic_ostream<CharT>& stream, const std::string& string)
 
             handle_styles(stream, buffer, styles);
         } else {
-            // it will print "\[" without this
-            if (current_char == '\\' && next_char == '[') {
+            // it will print "[[" without this
+            if (current_char == '[' && (next_char == '[' || prev_char == '[')) {
                 stream << '[';
+
+                ++i;
+            } else if (current_char == ']' && (next_char == ']' || prev_char == ']')) {
+                stream << ']';
 
                 ++i;
             } else {

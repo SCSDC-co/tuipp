@@ -17,7 +17,7 @@ main()
     tuipp::Console::println("  [green on grey]Colors![/]");
     tuipp::Console::println("  [underline bold]Styles![/]");
     tuipp::Console::println("  Normal text!");
-    tuipp::Console::println("  \\[green]Escaped markup!\\[/]");
+    tuipp::Console::println("  [[You can escape the markup!]]");
     tuipp::Console::println("  [green]Can print anything: [/]", vector);
 
     tuipp::Console::println();
