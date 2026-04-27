@@ -4,10 +4,10 @@
 #include <vector>
 
 #include "../../../src/tuipp/widgets/IRenderable.hpp"
-#include "tuipp/widgets/styles/Background.hpp"
-#include "tuipp/widgets/styles/Effects.hpp"
-#include "tuipp/widgets/styles/Foreground.hpp"
-#include "tuipp/widgets/styles/Justification.hpp"
+#include "tuipp/styles/Background.hpp"
+#include "tuipp/styles/Effects.hpp"
+#include "tuipp/styles/Foreground.hpp"
+#include "tuipp/styles/Justification.hpp"
 
 namespace tuipp {
 
@@ -36,9 +36,9 @@ namespace widgets {
  * @code{.cpp}
  * auto colored_text =
  *   tuipp::widgets::Text("Colored text!",
- *                        tuipp::widgets::styles::Foreground::GREEN,
- *                        tuipp::widgets::styles::Background::GREY,
- *                        { tuipp::widgets::styles::Effects::BOLD });
+ *                        tuipp::styles::Foreground::GREEN,
+ *                        tuipp::styles::Background::GREY,
+ *                        { tuipp::styles::Effects::BOLD });
  * @endcode
  */
 class Text : public tuipp::widgets::IRenderable

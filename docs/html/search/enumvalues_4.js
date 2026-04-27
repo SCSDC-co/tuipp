@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['green_0',['GREEN',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a9de0e5dd94e861317e74964bed179fa0',1,'tuipp::widgets::styles::GREEN'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea9de0e5dd94e861317e74964bed179fa0',1,'tuipp::widgets::styles::GREEN']]],
-  ['grey_1',['GREY',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a3c551f0d1a06b4f852d1832daed357bf',1,'tuipp::widgets::styles::GREY'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea3c551f0d1a06b4f852d1832daed357bf',1,'tuipp::widgets::styles::GREY']]]
+  ['eight_5fbit_0',['EIGHT_BIT',['../namespacetuipp_1_1console__info.html#ac4ba349e3647f800304af392b50fa1f8af584fec41e11a479ec37488b4860f7c3',1,'tuipp::console_info']]]
 ];

@@ -1,17 +1,17 @@
 <map id="include/tuipp/widgets/Text.hpp" name="include/tuipp/widgets/Text.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="355,5,498,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="379,5,522,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,104,59,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,37,221,59,146,77,72,99,69,100,66,95,70,93,144,71,220,54,357,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="376,35,235,58,152,75,71,99,69,100,66,95,70,93,151,70,234,52,381,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="83,104,141,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="352,42,258,66,153,99,150,100,148,95,151,93,257,61,357,41"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,40,271,64,153,99,150,100,148,95,151,93,270,59,381,39"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="165,96,334,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="388,48,305,91,303,86,383,49"/>
-<area shape="rect" id="Node000005" href="$Background_8hpp.html" title=" " alt="" coords="358,96,495,139"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="428,46,429,82,425,79,425,50"/>
-<area shape="rect" id="Node000006" href="$Effects_8hpp.html" title=" " alt="" coords="519,96,657,139"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="465,46,540,88,534,88,464,51"/>
-<area shape="rect" id="Node000007" href="$Foreground_8hpp.html" title=" " alt="" coords="681,96,818,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="499,45,669,93,663,93,498,50"/>
-<area shape="rect" id="Node000008" href="$Justification_8hpp.html" title=" " alt="" coords="842,96,979,139"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="499,36,647,59,829,95,824,95,646,64,499,41"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="406,48,311,92,309,87,401,49"/>
+<area shape="rect" id="Node000005" href="$Background_8hpp.html" title=" " alt="" coords="358,104,544,131"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="453,47,453,90,449,87,449,50"/>
+<area shape="rect" id="Node000006" href="$Effects_8hpp.html" title=" " alt="" coords="568,104,726,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="497,46,608,97,602,97,496,51"/>
+<area shape="rect" id="Node000007" href="$Foreground_8hpp.html" title=" " alt="" coords="750,104,932,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="523,42,773,100,768,100,522,47"/>
+<area shape="rect" id="Node000008" href="$Justification_8hpp.html" title=" " alt="" coords="957,104,1144,131"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="523,34,714,59,944,93,973,101,968,100,944,99,713,64,523,39"/>
 </map>

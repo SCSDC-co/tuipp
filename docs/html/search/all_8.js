@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['justification_0',['Justification',['../namespacetuipp_1_1widgets_1_1styles.html#aa2f44bf2d86debfd5ee546023b8a0e27',1,'tuipp::widgets::styles']]],
-  ['justification_1',['justification',['../classtuipp_1_1widgets_1_1Text.html#a5045ab93434e942983cfb4acf8701a62',1,'tuipp::widgets::Text']]],
-  ['justification_2ehpp_2',['Justification.hpp',['../Justification_8hpp.html',1,'']]]
+  ['italic_0',['ITALIC',['../namespacetuipp_1_1styles.html#afb0a05fa21a7933b20f71a603c3bfaf4a25093123b8943308104129e1d762f3b7',1,'tuipp::styles']]],
+  ['italic_1',['italic',['../namespacetuipp_1_1colors.html#aa9ff6dd0e5f5e1ef2b73d2514cca5afd',1,'tuipp::colors']]]
 ];

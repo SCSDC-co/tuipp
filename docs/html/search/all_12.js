@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['white_0',['WHITE',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6ab5bf627e448384cf3a4c35121ca6008d',1,'tuipp::widgets::styles::WHITE'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4eab5bf627e448384cf3a4c35121ca6008d',1,'tuipp::widgets::styles::WHITE']]],
-  ['white_1',['white',['../namespacetuipp_1_1colors.html#abd58ef049ee2f707a6549ea27457861e',1,'tuipp::colors']]],
-  ['width_2',['width',['../structtuipp_1_1console__info_1_1TerminalSize.html#a7e638866b82e173ec532efa5f740c7c2',1,'tuipp::console_info::TerminalSize']]]
+  ['underline_0',['UNDERLINE',['../namespacetuipp_1_1styles.html#afb0a05fa21a7933b20f71a603c3bfaf4a0086c73c90c261db630b4dc8aea09bcf',1,'tuipp::styles']]],
+  ['underline_1',['underline',['../namespacetuipp_1_1colors.html#a3cc005cb077f1dc05d9d36b1385736a6',1,'tuipp::colors']]],
+  ['use_2',['use',['../classtuipp_1_1widgets_1_1MarkupText.html#autotoc_md5',1,'Examples of use'],['../classtuipp_1_1widgets_1_1Text.html#autotoc_md8',1,'Examples of use']]]
 ];

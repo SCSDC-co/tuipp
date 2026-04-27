@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['effects_0',['Effects',['../namespacetuipp_1_1widgets_1_1styles.html#ae93fbc40f23aafc5cc59d42ed7d91540',1,'tuipp::widgets::styles']]],
-  ['effects_1',['effects',['../classtuipp_1_1widgets_1_1Text.html#ada64f3168c7a2bc565369f2dd3b78a90',1,'tuipp::widgets::Text']]],
-  ['effects_2ehpp_2',['Effects.hpp',['../Effects_8hpp.html',1,'']]],
-  ['eight_5fbit_3',['EIGHT_BIT',['../namespacetuipp_1_1console__info.html#ac4ba349e3647f800304af392b50fa1f8af584fec41e11a479ec37488b4860f7c3',1,'tuipp::console_info']]],
-  ['examples_4',['Examples',['../classtuipp_1_1Console.html#autotoc_md0',1,'']]],
-  ['examples_20of_20use_5',['Examples of use',['../classtuipp_1_1widgets_1_1MarkupText.html#autotoc_md5',1,'Examples of use'],['../classtuipp_1_1widgets_1_1Text.html#autotoc_md8',1,'Examples of use']]],
-  ['examples_3a_6',['Examples:',['../classtuipp_1_1Console.html#autotoc_md1',1,'Examples:'],['../classtuipp_1_1Console.html#autotoc_md3',1,'Examples:']]]
+  ['dim_0',['DIM',['../namespacetuipp_1_1styles.html#afb0a05fa21a7933b20f71a603c3bfaf4ac03e84e2195c6b9c2fc36b548b5f1bc4',1,'tuipp::styles']]],
+  ['double_1',['DOUBLE',['../namespacetuipp_1_1styles_1_1border.html#ab7ba3d48f70b2a53703500f94a242230afd3e4ece78a7d422280d5ed379482229',1,'tuipp::styles::border']]],
+  ['double_2',['Double',['../structtuipp_1_1styles_1_1border_1_1Double.html',1,'tuipp::styles::border']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['justification_0',['Justification',['../namespacetuipp_1_1widgets_1_1styles.html#aa2f44bf2d86debfd5ee546023b8a0e27',1,'tuipp::widgets::styles']]]
+  ['justification_0',['Justification',['../namespacetuipp_1_1styles.html#a71e3bc1833a8a374287d7cdc385c9362',1,'tuipp::styles']]]
 ];

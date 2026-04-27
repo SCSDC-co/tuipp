@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,56,186,83"/>
+<area shape="rect" id="Node000001" href="$classtuipp_1_1widgets_1_1MarkupText.html" title="A widget for writing colorful text easily." alt="" coords="234,5,412,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="173,49,262,31,257,34,174,55"/>
+<area shape="rect" id="Node000002" href="$classtuipp_1_1widgets_1_1Rule.html" title=" " alt="" coords="254,56,392,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="201,67,256,69,251,70,201,72"/>
+<area shape="rect" id="Node000003" href="$classtuipp_1_1widgets_1_1Text.html" title="Just normal text!" alt="" coords="255,107,390,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="174,84,262,105,257,107,173,89"/>
+</map>

@@ -2,8 +2,6 @@
 
 namespace tuipp {
 
-namespace widgets {
-
 /// All the styles you want!
 namespace styles {
 
@@ -29,7 +27,5 @@ enum class Foreground
 };
 
 }
-
-} // namespace widgets
 
 } // namespace tuipp

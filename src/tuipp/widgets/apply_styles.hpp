@@ -1,8 +1,8 @@
 #pragma once
 
-#include "tuipp/widgets/styles/Background.hpp"
-#include "tuipp/widgets/styles/Effects.hpp"
-#include "tuipp/widgets/styles/Foreground.hpp"
+#include "tuipp/styles/Background.hpp"
+#include "tuipp/styles/Effects.hpp"
+#include "tuipp/styles/Foreground.hpp"
 #include "vendor/termcolor.hpp"
 
 namespace tuipp {

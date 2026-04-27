@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['terminal_5fsize_0',['terminal_size',['../classtuipp_1_1Console.html#a166225a8104b221aff37ff4a0039527e',1,'tuipp::Console']]],
-  ['terminalsize_1',['TerminalSize',['../structtuipp_1_1console__info_1_1TerminalSize.html',1,'tuipp::console_info']]],
-  ['text_2',['Text',['../classtuipp_1_1widgets_1_1Text.html',1,'tuipp::widgets::Text'],['../classtuipp_1_1widgets_1_1Text.html#af35bac5de5b6828c52c84b38752a7150',1,'tuipp::widgets::Text::Text()']]],
-  ['text_2ehpp_3',['Text.hpp',['../Text_8hpp.html',1,'']]],
-  ['true_5fcolor_4',['TRUE_COLOR',['../namespacetuipp_1_1console__info.html#ac4ba349e3647f800304af392b50fa1f8ac724fff88009cf80292aa8af9cf5db52',1,'tuipp::console_info']]],
-  ['tuipp_5',['tuipp',['../namespacetuipp.html',1,'']]],
-  ['tuipp_3a_3acolors_6',['colors',['../namespacetuipp_1_1colors.html',1,'tuipp']]],
-  ['tuipp_3a_3aconsole_5finfo_7',['console_info',['../namespacetuipp_1_1console__info.html',1,'tuipp']]],
-  ['tuipp_3a_3awidgets_8',['widgets',['../namespacetuipp_1_1widgets.html',1,'tuipp']]],
-  ['tuipp_3a_3awidgets_3a_3astyles_9',['styles',['../namespacetuipp_1_1widgets_1_1styles.html',1,'tuipp::widgets']]]
+  ['square_0',['SQUARE',['../namespacetuipp_1_1styles_1_1border.html#ab7ba3d48f70b2a53703500f94a242230a12dec4e1f7ec620651b2b95c440ffac0',1,'tuipp::styles::border']]],
+  ['square_1',['Square',['../structtuipp_1_1styles_1_1border_1_1Square.html',1,'tuipp::styles::border']]],
+  ['strike_5fthrough_2',['STRIKE_THROUGH',['../namespacetuipp_1_1styles.html#afb0a05fa21a7933b20f71a603c3bfaf4ade4677176cd26d1f35a3ea29f9ce4598',1,'tuipp::styles']]],
+  ['styles_3a_3',['Styles:',['../classtuipp_1_1widgets_1_1MarkupText.html#autotoc_md6',1,'']]],
+  ['support_5fansi_4',['support_ansi',['../classtuipp_1_1Console.html#a126a92543149716d8f2b896691dfa28a',1,'tuipp::Console']]]
 ];

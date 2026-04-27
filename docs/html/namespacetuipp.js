@@ -32,6 +32,7 @@ var namespacetuipp =
       [ "yellow", "namespacetuipp_1_1colors.html#a9ab4929b23f09239cff982e41bc1df58", null ]
     ] ],
     [ "console_info", "namespacetuipp_1_1console__info.html", "namespacetuipp_1_1console__info" ],
+    [ "styles", "namespacetuipp_1_1styles.html", "namespacetuipp_1_1styles" ],
     [ "widgets", "namespacetuipp_1_1widgets.html", "namespacetuipp_1_1widgets" ],
     [ "Console", "classtuipp_1_1Console.html", "classtuipp_1_1Console" ]
 ];

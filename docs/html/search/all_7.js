@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['italic_0',['ITALIC',['../namespacetuipp_1_1widgets_1_1styles.html#ae93fbc40f23aafc5cc59d42ed7d91540a25093123b8943308104129e1d762f3b7',1,'tuipp::widgets::styles']]],
-  ['italic_1',['italic',['../namespacetuipp_1_1colors.html#aa9ff6dd0e5f5e1ef2b73d2514cca5afd',1,'tuipp::colors']]]
+  ['heavy_0',['HEAVY',['../namespacetuipp_1_1styles_1_1border.html#ab7ba3d48f70b2a53703500f94a242230a7f51edd36275e0ad089c8f9dc7fecf87',1,'tuipp::styles::border']]],
+  ['heavy_1',['Heavy',['../structtuipp_1_1styles_1_1border_1_1Heavy.html',1,'tuipp::styles::border']]],
+  ['height_2',['height',['../structtuipp_1_1console__info_1_1TerminalSize.html#adade976788fd6ec629f3c8defedef3e5',1,'tuipp::console_info::TerminalSize']]]
 ];

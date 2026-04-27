@@ -2,8 +2,6 @@
 
 namespace tuipp {
 
-namespace widgets {
-
 /// All the styles you want!
 namespace styles {
 
@@ -21,7 +19,5 @@ enum class Effects
 };
 
 }
-
-} // namespace widgets
 
 } // namespace tuipp

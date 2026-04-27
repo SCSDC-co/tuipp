@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['eight_5fbit_0',['EIGHT_BIT',['../namespacetuipp_1_1console__info.html#ac4ba349e3647f800304af392b50fa1f8af584fec41e11a479ec37488b4860f7c3',1,'tuipp::console_info']]]
+  ['dim_0',['DIM',['../namespacetuipp_1_1styles.html#afb0a05fa21a7933b20f71a603c3bfaf4ac03e84e2195c6b9c2fc36b548b5f1bc4',1,'tuipp::styles']]],
+  ['double_1',['DOUBLE',['../namespacetuipp_1_1styles_1_1border.html#ab7ba3d48f70b2a53703500f94a242230afd3e4ece78a7d422280d5ed379482229',1,'tuipp::styles::border']]]
 ];

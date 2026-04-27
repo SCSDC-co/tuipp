@@ -7,7 +7,7 @@
 #include "../../../src/tuipp/widgets/apply_styles.hpp"
 #include "apply_styles.hpp"
 #include "tuipp/Console.hpp"
-#include "tuipp/widgets/styles/Justification.hpp"
+#include "tuipp/styles/Justification.hpp"
 #include "vendor/termcolor.hpp"
 
 namespace tuipp {

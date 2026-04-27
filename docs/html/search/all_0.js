@@ -1,28 +1,5 @@
 var searchData=
 [
-  ['background_0',['Background',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6',1,'tuipp::widgets::styles']]],
-  ['background_1',['background',['../classtuipp_1_1widgets_1_1Text.html#a5f43ea19eecd7df1907b91bc22ec4f72',1,'tuipp::widgets::Text']]],
-  ['background_2ehpp_2',['Background.hpp',['../Background_8hpp.html',1,'']]],
-  ['blink_3',['BLINK',['../namespacetuipp_1_1widgets_1_1styles.html#ae93fbc40f23aafc5cc59d42ed7d91540ad810ed8e97088a3c987f179dfb88cefc',1,'tuipp::widgets::styles']]],
-  ['blink_4',['blink',['../namespacetuipp_1_1colors.html#a41edd1c84d4b7e9ef0d19e9d35cac621',1,'tuipp::colors']]],
-  ['blue_5',['BLUE',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a1b3e1ee9bff86431dea6b181365ba65f',1,'tuipp::widgets::styles::BLUE'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea1b3e1ee9bff86431dea6b181365ba65f',1,'tuipp::widgets::styles::BLUE']]],
-  ['blue_6',['blue',['../namespacetuipp_1_1colors.html#a517221b3c46730232f765f64b61f9f9f',1,'tuipp::colors']]],
-  ['bold_7',['BOLD',['../namespacetuipp_1_1widgets_1_1styles.html#ae93fbc40f23aafc5cc59d42ed7d91540a2909dd0e0336f10b6da9735b859a3d19',1,'tuipp::widgets::styles']]],
-  ['bold_8',['bold',['../namespacetuipp_1_1colors.html#ac9d5ca117a3aade253699c7ab7b80240',1,'tuipp::colors']]],
-  ['bright_5fblue_9',['BRIGHT_BLUE',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6ad187a715c27ec1e774325b6715f4da67',1,'tuipp::widgets::styles::BRIGHT_BLUE'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ead187a715c27ec1e774325b6715f4da67',1,'tuipp::widgets::styles::BRIGHT_BLUE']]],
-  ['bright_5fblue_10',['bright_blue',['../namespacetuipp_1_1colors.html#a7146f8d0914f47ed07c1aba08359b7e1',1,'tuipp::colors']]],
-  ['bright_5fcyan_11',['BRIGHT_CYAN',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6aa74a6a719de5de03a46f89ce260fa4b7',1,'tuipp::widgets::styles::BRIGHT_CYAN'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4eaa74a6a719de5de03a46f89ce260fa4b7',1,'tuipp::widgets::styles::BRIGHT_CYAN']]],
-  ['bright_5fcyan_12',['bright_cyan',['../namespacetuipp_1_1colors.html#aeee511d2f2ddd971fab5566ff4a4ceb0',1,'tuipp::colors']]],
-  ['bright_5fgreen_13',['BRIGHT_GREEN',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a7ca9c0eccf9c3fa7fe85fea8404d50a9',1,'tuipp::widgets::styles::BRIGHT_GREEN'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea7ca9c0eccf9c3fa7fe85fea8404d50a9',1,'tuipp::widgets::styles::BRIGHT_GREEN']]],
-  ['bright_5fgreen_14',['bright_green',['../namespacetuipp_1_1colors.html#ab8dc5968515aa1b154b6b0d0ba625549',1,'tuipp::colors']]],
-  ['bright_5fgrey_15',['BRIGHT_GREY',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a2be53f6d88941fc22f3d823df564dbff',1,'tuipp::widgets::styles::BRIGHT_GREY'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea2be53f6d88941fc22f3d823df564dbff',1,'tuipp::widgets::styles::BRIGHT_GREY']]],
-  ['bright_5fgrey_16',['bright_grey',['../namespacetuipp_1_1colors.html#af860e428689684ae19622edc57f28778',1,'tuipp::colors']]],
-  ['bright_5fmagenta_17',['BRIGHT_MAGENTA',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6acdbf2435d34544195dd18a6b31953951',1,'tuipp::widgets::styles::BRIGHT_MAGENTA'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4eacdbf2435d34544195dd18a6b31953951',1,'tuipp::widgets::styles::BRIGHT_MAGENTA']]],
-  ['bright_5fmagenta_18',['bright_magenta',['../namespacetuipp_1_1colors.html#afc703f26417d04983bf142842c19fadb',1,'tuipp::colors']]],
-  ['bright_5fred_19',['BRIGHT_RED',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a01fd5046e2769cae7b662d3dfbb64045',1,'tuipp::widgets::styles::BRIGHT_RED'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea01fd5046e2769cae7b662d3dfbb64045',1,'tuipp::widgets::styles::BRIGHT_RED']]],
-  ['bright_5fred_20',['bright_red',['../namespacetuipp_1_1colors.html#a0793051efb5d44be0b30d7c39eb5b6be',1,'tuipp::colors']]],
-  ['bright_5fwhite_21',['BRIGHT_WHITE',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a376520e57593580aa5c7ef8cf5136946',1,'tuipp::widgets::styles::BRIGHT_WHITE'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea376520e57593580aa5c7ef8cf5136946',1,'tuipp::widgets::styles::BRIGHT_WHITE']]],
-  ['bright_5fwhite_22',['bright_white',['../namespacetuipp_1_1colors.html#a23e3a592999944789b5bfea589177cbb',1,'tuipp::colors']]],
-  ['bright_5fyellow_23',['BRIGHT_YELLOW',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6a2373edc9b8eb3a49710b95c6f7906434',1,'tuipp::widgets::styles::BRIGHT_YELLOW'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4ea2373edc9b8eb3a49710b95c6f7906434',1,'tuipp::widgets::styles::BRIGHT_YELLOW']]],
-  ['bright_5fyellow_24',['bright_yellow',['../namespacetuipp_1_1colors.html#a32cd0c0d447cbf24af62bc67352f8ecb',1,'tuipp::colors']]]
+  ['ascii_0',['ASCII',['../namespacetuipp_1_1styles_1_1border.html#ab7ba3d48f70b2a53703500f94a242230ad2cd8253361a9c732d21ca1d336599cc',1,'tuipp::styles::border']]],
+  ['ascii_1',['Ascii',['../structtuipp_1_1styles_1_1border_1_1Ascii.html',1,'tuipp::styles::border']]]
 ];

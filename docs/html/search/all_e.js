@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['red_0',['RED',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6aa2d9547b5d3dd9f05984475f7c926da0',1,'tuipp::widgets::styles::RED'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4eaa2d9547b5d3dd9f05984475f7c926da0',1,'tuipp::widgets::styles::RED']]],
-  ['red_1',['red',['../namespacetuipp_1_1colors.html#a617e75f6262c7193dcca9083c1666a5a',1,'tuipp::colors']]],
-  ['render_2',['render',['../classtuipp_1_1widgets_1_1MarkupText.html#a5613a4f69e5ea369dd2aec34c9e6b063',1,'tuipp::widgets::MarkupText::render()'],['../classtuipp_1_1widgets_1_1Text.html#a170c41b1cf38a04f45573eea1d4740d3',1,'tuipp::widgets::Text::render()']]],
-  ['reset_3',['reset',['../namespacetuipp_1_1colors.html#ae5b3af666f1d33a6f0d9aabc8f0ebb12',1,'tuipp::colors']]],
-  ['reverse_4',['REVERSE',['../namespacetuipp_1_1widgets_1_1styles.html#ae93fbc40f23aafc5cc59d42ed7d91540a642e0b6684e6165e142c074f1cd8d55c',1,'tuipp::widgets::styles']]],
-  ['right_5',['RIGHT',['../namespacetuipp_1_1widgets_1_1styles.html#aa2f44bf2d86debfd5ee546023b8a0e27a21507b40c80068eda19865706fdc2403',1,'tuipp::widgets::styles']]]
+  ['print_0',['print',['../classtuipp_1_1Console.html#aa854d1ad5dd6145c1686e3f2617740a0',1,'tuipp::Console']]],
+  ['print_5finfo_1',['print_info',['../classtuipp_1_1Console.html#af8cc9ec4e52216d8fed6af5e849f5312',1,'tuipp::Console']]],
+  ['println_2',['println',['../classtuipp_1_1Console.html#a1017c32f551adba0aba8b182dca0eec6',1,'tuipp::Console']]]
 ];
