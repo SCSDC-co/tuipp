@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['of_20use_0',['of use',['../classtuipp_1_1widgets_1_1MarkupText.html#autotoc_md5',1,'Examples of use'],['../classtuipp_1_1widgets_1_1Text.html#autotoc_md8',1,'Examples of use']]],
-  ['on_5fblue_1',['on_blue',['../namespacetuipp_1_1colors.html#a95e9e0801b5607479d6c48173627526d',1,'tuipp::colors']]],
-  ['on_5fcyan_2',['on_cyan',['../namespacetuipp_1_1colors.html#a9333556ac8a893348173dc8dd2cdd88f',1,'tuipp::colors']]],
-  ['on_5fgreen_3',['on_green',['../namespacetuipp_1_1colors.html#a48e86dee39b0b57d000a56495e9b4d8c',1,'tuipp::colors']]],
-  ['on_5fgrey_4',['on_grey',['../namespacetuipp_1_1colors.html#ac4f2c40cad261df9ff2ed4569fa15d05',1,'tuipp::colors']]],
-  ['on_5fmagenta_5',['on_magenta',['../namespacetuipp_1_1colors.html#a5555475a7c9d451dc913da086e315425',1,'tuipp::colors']]],
-  ['on_5fred_6',['on_red',['../namespacetuipp_1_1colors.html#aac727d3f27297408e9cd184e55673523',1,'tuipp::colors']]],
-  ['on_5fwhite_7',['on_white',['../namespacetuipp_1_1colors.html#a793877a88093d9bc3e487230db7ae90b',1,'tuipp::colors']]],
-  ['on_5fyellow_8',['on_yellow',['../namespacetuipp_1_1colors.html#a08b6d8b007156c801a4a34238bb2ff9b',1,'tuipp::colors']]],
-  ['operator_3c_3c_9',['operator&lt;&lt;',['../classtuipp_1_1Console.html#ac026f757d12c438c51ee02f7cc763ed1',1,'tuipp::Console::operator&lt;&lt;(const T &amp;value)'],['../classtuipp_1_1Console.html#a3d4e63f8d4d199ddc1dcc0894685c8fe',1,'tuipp::Console::operator&lt;&lt;(std::ostream &amp;(*f)(std::ostream &amp;))']]]
+  ['magenta_0',['MAGENTA',['../namespacetuipp_1_1widgets_1_1styles.html#a765dc82569014176602929fbb3fdf5c6ac634ffea7195608364671ac52ee59a61',1,'tuipp::widgets::styles::MAGENTA'],['../namespacetuipp_1_1widgets_1_1styles.html#ad205737fbe2c5c5b51a9342237e0ad4eac634ffea7195608364671ac52ee59a61',1,'tuipp::widgets::styles::MAGENTA']]],
+  ['magenta_1',['magenta',['../namespacetuipp_1_1colors.html#a0347402209e1136486b931c8302e1eab',1,'tuipp::colors']]],
+  ['markuptext_2',['MarkupText',['../classtuipp_1_1widgets_1_1MarkupText.html',1,'tuipp::widgets::MarkupText'],['../classtuipp_1_1widgets_1_1MarkupText.html#aeb22b8a98856687f3947c971798cc078',1,'tuipp::widgets::MarkupText::MarkupText()']]],
+  ['markuptext_2ehpp_3',['MarkupText.hpp',['../MarkupText_8hpp.html',1,'']]]
 ];

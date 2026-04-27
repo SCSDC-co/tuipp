@@ -2,14 +2,22 @@
 .ad l
 .nh
 .SH NAME
-include tuipp widgets MarkupText\&.hpp Text\&.hpp 
+include tuipp widgets styles Background\&.hpp Effects\&.hpp Foreground\&.hpp 
+.PP
+MarkupText\&.hpp Text\&.hpp 
 .PP
 colors\&.hpp Console\&.hpp console_info\&.hpp 
 .PP
-tuipp widgets MarkupText\&.hpp Text\&.hpp 
+styles Background\&.hpp Effects\&.hpp Foreground\&.hpp 
+.PP
+tuipp widgets styles Background\&.hpp Effects\&.hpp Foreground\&.hpp 
+.PP
+MarkupText\&.hpp Text\&.hpp 
 .PP
 colors\&.hpp Console\&.hpp console_info\&.hpp 
 .PP
-widgets MarkupText\&.hpp Text\&.hpp 
+widgets styles Background\&.hpp Effects\&.hpp Foreground\&.hpp 
+.PP
+MarkupText\&.hpp Text\&.hpp 
 .PP
 

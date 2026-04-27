@@ -50,6 +50,6 @@ enum class Style
     RESET_ALL
 };
 
-}
+} // namespace widgets
 
 } // namespace tuipp

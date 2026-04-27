@@ -13,7 +13,7 @@ Inherits tuipp::widgets::IRenderable\&.
 
 .in +1c
 .ti -1c
-.RI "\fBText\fP (std::string content)"
+.RI "\fBText\fP (std::string content, \fBstyles::Foreground\fP foreground=\fBstyles::Foreground::NONE\fP, \fBstyles::Background\fP background=\fBstyles::Background::NONE\fP, std::vector< \fBstyles::Effects\fP > effects={ \fBstyles::Effects::NONE\fP })"
 .br
 .ti -1c
 .RI "virtual void \fBrender\fP () const"
@@ -39,10 +39,24 @@ tuipp::Console::println(text);
 text\&.render();
 .fi
 .PP
+
+.PP
+It also support styles:
+
+.PP
+.PP
+.nf
+auto colored_text =
+  tuipp::widgets::Text("Colored text!",
+                       tuipp::widgets::styles::Foreground::GREEN,
+                       tuipp::widgets::styles::Background::GREY,
+                       { tuipp::widgets::styles::Effects::BOLD });
+.fi
+.PP
  
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "tuipp::widgets::Text::Text (std::string content)\fR [inline]\fP"
+.SS "tuipp::widgets::Text::Text (std::string content, \fBstyles::Foreground\fP foreground = \fR\fBstyles::Foreground::NONE\fP\fP, \fBstyles::Background\fP background = \fR\fBstyles::Background::NONE\fP\fP, std::vector< \fBstyles::Effects\fP > effects = \fR{ \fBstyles::Effects::NONE\fP }\fP)\fR [inline]\fP"
 
 .SH "Member Function Documentation"
 .PP 

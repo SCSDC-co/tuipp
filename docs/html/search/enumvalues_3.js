@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['standard_0',['STANDARD',['../classtuipp_1_1Console.html#a3c346646df4d1f393cc02bf45f22cd8aa59a6a133cb3e029c08a1d64541515089',1,'tuipp::Console']]]
+  ['eight_5fbit_0',['EIGHT_BIT',['../namespacetuipp_1_1console__info.html#ac4ba349e3647f800304af392b50fa1f8af584fec41e11a479ec37488b4860f7c3',1,'tuipp::console_info']]]
 ];
