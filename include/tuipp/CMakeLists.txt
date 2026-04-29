@@ -1,0 +1,13 @@
+set(public_header
+    ./colors.hpp
+    ./Console.hpp
+    ./console_info.hpp
+    ./styles/Background.hpp
+    ./styles/Foreground.hpp
+    ./styles/Border.hpp
+    ./styles/Effects.hpp
+    ./styles/Justification.hpp
+    ./widgets/MarkupText.hpp
+    ./widgets/Text.hpp
+    ./widgets/Rule.hpp
+)

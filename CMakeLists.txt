@@ -14,49 +14,67 @@ project(
         "A header-only simple TUI library heavily inspired by rich and Spectre.Console"
 )
 
-add_subdirectory(src/tuipp/)
+include(GNUInstallDirs)
 
-option(TUIPP_BUILD_TESTS "Build tests" OFF)
-option(TUIPP_BUILD_DOCS "Build the docs" OFF)
+add_library(${PROJECT_NAME} STATIC)
 
-if(TUIPP_BUILD_TESTS)
-    add_executable(tuipp test/main.cpp)
+add_subdirectory(./src/tuipp/)
 
-    target_include_directories(tuipp PUBLIC ${CMAKE_SOURCE_DIR}/include)
-    target_link_libraries(tuipp PUBLIC tuipp_src)
-    set_target_properties(tuipp PROPERTIES CXX_EXTENSIONS OFF)
+target_include_directories(
+    ${PROJECT_NAME}
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/tuipp
+    PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/tuipp>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+)
+
+add_subdirectory(./include/tuipp/)
+
+# This is for preserving the folder structure
+foreach(header ${public_headers})
+    file(
+        RELATIVE_PATH
+        header_file_path
+        "${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}"
+        "${header}"
+    )
+    get_filename_component(
+        header_directory_path
+        "${header_file_path}"
+        DIRECTORY
+    )
+    install(
+        FILES ${header}
+        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${header_directory_path}"
+    )
+endforeach()
+
+set_target_properties(${PROJECT_NAME} PROPERTIES DEBUG_POSTFIX "d")
+
+if(DEFINED CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+    message(
+        STATUS
+        "CMAKE_INSTALL_PREFIX is not set\n"
+        "Default value: ${CMAKE_INSTALL_PREFIX}\n"
+        "Will set it to ${CMAKE_SOURCE_DIR}/install"
+    )
+    set(CMAKE_INSTALL_PREFIX
+        "${CMAKE_SOURCE_DIR}/install"
+        CACHE PATH
+        "Where TUI++ will be installed to"
+        FORCE
+    )
 endif()
 
-if(TUIPP_BUILD_DOCS)
-    find_package(Doxygen)
+install(
+    TARGETS ${PROJECT_NAME}
+    EXPORT "${PROJECT_NAME}Targets"
+    # these get default values from GNUInstallDirs, no need to set them
+    #RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} # bin
+    #LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} # lib
+    #ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} # lib
+    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
 
-    if(Doxygen_FOUND)
-        set(DOXYGEN_PROJECT_NAME TUI++)
-        set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/docs/)
-        set(DOXYGEN_JAVADOC_AUTOBRIEF YES)
-        set(DOXYGEN_MULTILINE_CPP_IS_BRIEF YES)
-        set(DOXYGEN_CPP_CLI_SUPPORT YES)
-        set(DOXYGEN_EXTRACT_ALL YES)
-        set(DOXYGEN_SHOW_HEADERFILE NO)
-        set(DOXYGEN_SHOW_INCLUDE_FILES NO)
-        set(DOXYGEN_QUIET YES)
-        set(DOXYGEN_RECURSIVE YES)
-        set(DOXYGEN_GENERATE_MAN YES)
-        set(DOXYGEN_GENERATE_TREEVIEW YES)
-        set(DOXYGEN_EXCLUDE_PATTERNS *private/*)
-
-        doxygen_add_docs(tuipp_docs ${CMAKE_SOURCE_DIR}/include/tuipp/ ALL)
-
-        add_custom_command(
-            TARGET tuipp_docs
-            POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E echo ""
-            COMMAND ${CMAKE_COMMAND} -E echo "All docs build successfully."
-            COMMAND
-                ${CMAKE_COMMAND} -E echo "Output: ${DOXYGEN_OUTPUT_DIRECTORY}"
-            COMMAND ${CMAKE_COMMAND} -E echo ""
-        )
-    else()
-        message(FATAL_ERROR "Doxygen not found. Please install it")
-    endif()
-endif()
+include(./cmake/doxygen.cmake)

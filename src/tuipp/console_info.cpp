@@ -6,7 +6,7 @@
 #include <string>
 #include <string_view>
 
-#include "tuipp/private/macros.hpp"
+#include "../../include/tuipp/private/macros.hpp"
 
 #if defined(ON_WINDOWS)
 #  define WIN32_LEAN_AND_MEAN

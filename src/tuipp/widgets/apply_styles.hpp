@@ -1,9 +1,9 @@
 #pragma once
 
-#include "tuipp/styles/Background.hpp"
-#include "tuipp/styles/Effects.hpp"
-#include "tuipp/styles/Foreground.hpp"
-#include "vendor/termcolor.hpp"
+#include "../../../include/tuipp/styles/Background.hpp"
+#include "../../../include/tuipp/styles/Effects.hpp"
+#include "../../../include/tuipp/styles/Foreground.hpp"
+#include "../../../include/vendor/termcolor.hpp"
 
 namespace tuipp {
 

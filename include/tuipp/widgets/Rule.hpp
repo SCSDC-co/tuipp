@@ -3,9 +3,9 @@
 #include <string>
 
 #include "../../../src/tuipp/widgets/IRenderable.hpp"
-#include "tuipp/styles/Border.hpp"
-#include "tuipp/styles/Foreground.hpp"
-#include "tuipp/styles/Justification.hpp"
+#include "../styles/Border.hpp"
+#include "../styles/Foreground.hpp"
+#include "../styles/Justification.hpp"
 
 namespace tuipp {
 

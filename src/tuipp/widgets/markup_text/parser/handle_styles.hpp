@@ -7,8 +7,8 @@
 #include <unordered_map>
 #include <vector>
 
+#include "../../../../../include/vendor/termcolor.hpp"
 #include "../../Style.hpp"
-#include "vendor/termcolor.hpp"
 
 namespace tuipp {
 

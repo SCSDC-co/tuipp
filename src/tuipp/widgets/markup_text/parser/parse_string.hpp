@@ -6,8 +6,8 @@
 #include <string>
 #include <vector>
 
+#include "../../../../../include/vendor/termcolor.hpp"
 #include "handle_styles.hpp"
-#include "vendor/termcolor.hpp"
 
 namespace tuipp {
 

@@ -4,10 +4,10 @@
 #include <vector>
 
 #include "../../../src/tuipp/widgets/IRenderable.hpp"
-#include "tuipp/styles/Background.hpp"
-#include "tuipp/styles/Effects.hpp"
-#include "tuipp/styles/Foreground.hpp"
-#include "tuipp/styles/Justification.hpp"
+#include "../styles/Background.hpp"
+#include "../styles/Effects.hpp"
+#include "../styles/Foreground.hpp"
+#include "../styles/Justification.hpp"
 
 namespace tuipp {
 

@@ -3,7 +3,7 @@
 #include <string>
 
 #include "../../../src/tuipp/borders/BorderParts.hpp"
-#include "tuipp/private/macros.hpp"
+#include "../private/macros.hpp"
 
 namespace tuipp {
 

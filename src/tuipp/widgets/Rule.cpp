@@ -1,13 +1,13 @@
-#include "tuipp/widgets/Rule.hpp"
+#include "../../../include/tuipp/widgets/Rule.hpp"
 
 #include <cstddef>
 #include <ostream>
 
+#include "../../../include/tuipp/Console.hpp"
+#include "../../../include/vendor/termcolor.hpp"
 #include "apply_styles.hpp"
 #include "markup_text/parser/get_text_lenght.hpp"
 #include "markup_text/parser/parse_string.hpp"
-#include "tuipp/Console.hpp"
-#include "vendor/termcolor.hpp"
 
 namespace tuipp {
 
