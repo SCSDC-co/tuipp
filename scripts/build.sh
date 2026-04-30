@@ -8,7 +8,7 @@ cd "$(dirname "$0")" || exit 1
 
 cd ../build || exit 1
 
-cmake -S .. -B . || {
+cmake -S . -B . || {
     echo "cmake failed"
     exit 1
 }
