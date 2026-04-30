@@ -30,10 +30,10 @@ jobs:
           compiler: llvm
           ninja: true
 
-      - run: ls
-
       - name: Create the build directory
         run: mkdir build
+
+      - run: ls
 
       - name: Executes cmake
         run: cmake -S . -B build
