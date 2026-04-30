@@ -4,6 +4,7 @@
 #include <ostream>
 #include <print>
 #include <string>
+#include <string_view>
 
 #include "../../src/tuipp/widgets/markup_text/parser/parse_string.hpp"
 #include "tuipp/console_info.hpp"
@@ -44,56 +45,6 @@ class Console
     inline static bool support_ansi{ tuipp::console_info::get_support_ansi() };
 
     /**
-     * @brief Print an output to the screen with a new line at the end.
-     *
-     * Also supports widgets and will call their `.render()` method.
-     *
-     * ## Examples:
-     *
-     * @code{.cpp}
-     * tuipp::Console::println("[bold green]Hello, World![/]");
-     * tuipp::Console::println(
-     * "[green]This is green [bold]this is bold and green[/] this is still green[/]"
-     * );
-     * tuipp::Console::println("[blue]Number of files: [/]", 10, ".");
-     * tuipp::Console::println("[green]This is green [bold]this is bold and green[reset] this is
-     * normal");
-     * @endcode
-     *
-     * ---
-     *
-     * It can also print iterables:
-     *
-     * @code{.cpp}
-     * std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
-     *
-     * tuipp::Console::println(vector);
-     * @endcode
-     *
-     * @param content The items you want to print, they can be of any type and you can pass as many
-     * as you want.
-     */
-    template<typename... Args>
-    static void println(const Args&... content)
-    {
-        std::ostream& output = std::cout;
-
-        (
-          [&]() {
-              if constexpr (std::is_base_of_v<widgets::IRenderable, std::remove_cvref_t<Args>>) {
-                  content.render();
-              } else if constexpr (std::is_convertible_v<decltype(content), std::string>) {
-                  tuipp::widgets::markup_text::parse_string(std::cout, content);
-              } else {
-                  std::print("{} ", content);
-              }
-          }(),
-          ...);
-
-        output << std::endl;
-    }
-
-    /**
      * @brief Print an output to the screen without a new line at the end.
      *
      * Also supports widgets and will call their `.render()` method.
@@ -130,13 +81,52 @@ class Console
           [&]() {
               if constexpr (std::is_base_of_v<widgets::IRenderable, std::remove_cvref_t<Args>>) {
                   content.render();
-              } else if constexpr (std::is_convertible_v<decltype(content), std::string>) {
+              } else if constexpr (std::is_convertible_v<decltype(content), std::string> ||
+                                   std::is_convertible_v<decltype(content), std::string_view>) {
                   tuipp::widgets::markup_text::parse_string(std::cout, content);
               } else {
                   std::print("{} ", content);
               }
           }(),
           ...);
+    }
+
+    /**
+     * @brief Print an output to the screen with a new line at the end.
+     *
+     * Also supports widgets and will call their `.render()` method.
+     *
+     * ## Examples:
+     *
+     * @code{.cpp}
+     * tuipp::Console::println("[bold green]Hello, World![/]");
+     * tuipp::Console::println(
+     * "[green]This is green [bold]this is bold and green[/] this is still green[/]"
+     * );
+     * tuipp::Console::println("[blue]Number of files: [/]", 10, ".");
+     * tuipp::Console::println("[green]This is green [bold]this is bold and green[reset] this is
+     * normal");
+     * @endcode
+     *
+     * ---
+     *
+     * It can also print iterables:
+     *
+     * @code{.cpp}
+     * std::vector<int> vector{ { 1, 2, 3, 4, 5, 6 } };
+     *
+     * tuipp::Console::println(vector);
+     * @endcode
+     *
+     * @param content The items you want to print, they can be of any type and you can pass as many
+     * as you want.
+     */
+    template<typename... Args>
+    static void println(const Args&... content)
+    {
+        print(content...);
+
+        std::cout << '\n';
     }
 
     /// @return the color support as a string

@@ -3,7 +3,6 @@
 #include <cstddef>
 #include <iostream>
 #include <ostream>
-#include <string>
 #include <vector>
 
 #include "handle_styles.hpp"
@@ -17,7 +16,7 @@ namespace markup_text {
 
 template<typename CharT>
 std::basic_ostream<CharT>&
-parse_string(std::basic_ostream<CharT>& stream, const std::string& string)
+parse_string(std::basic_ostream<CharT>& stream, std::string_view string)
 {
     char prev_char{};
 
