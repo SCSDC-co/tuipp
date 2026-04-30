@@ -13,7 +13,7 @@ Printing a simple yellow text:
 
 ::: code-group
 
-```cpp [FTXUI]
+```cpp:line-numbers [FTXUI]
 auto document = text("Hello, World!") | color(Color::Yellow);
 
 auto screen = Screen::Create(Dimension::Fit(document), Dimension::Fit(document));
@@ -21,7 +21,7 @@ Render(screen, document);
 screen.Print();
 ```
 
-```cpp [TUI++]
+```cpp:line-numbers [TUI++]
 tuipp::Console::println("[yellow]Hello, World![/]");
 ```
 
@@ -33,7 +33,7 @@ Printing a multi-color text:
 
 ::: code-group
 
-```cpp [FTXUI]
+```cpp:line-numbers [FTXUI]
 auto document = hflow({
   text("Hello, ") | color(Color::Yellow),
   text("World") | color(Color::Red),
@@ -45,7 +45,7 @@ Render(screen, document);
 screen.Print();
 ```
 
-```cpp [TUI++]
+```cpp:line-numbers [TUI++]
 tuipp::Console::println("[yellow]Hello, [/][red]World[/][green]![/]");
 ```
 
