@@ -1,25 +1,22 @@
 #include "tuipp/widgets/Text.hpp"
 
-#include <cstddef>
 #include <iostream>
 #include <string>
 
 #include "../src/vendor/termcolor.hpp"
 #include "apply_styles.hpp"
-#include "tuipp/Console.hpp"
 #include "tuipp/styles/Justification.hpp"
 #include "widgets/apply_styles.hpp"
+#include "widgets/markup_text/parser/get_text_length.hpp"
 
 namespace tuipp {
 
 namespace widgets {
 
 void
-Text::render() const
+Text::render(const int& width) const
 {
     std::ostream& output = std::cout;
-
-    std::size_t total_width{ Console::terminal_size.width };
 
     int padding{};
 
@@ -28,10 +25,10 @@ Text::render() const
             padding = 0;
             break;
         case styles::Justification::CENTER:
-            padding = (total_width / 2) - (this->content.length() / 2);
+            padding = (width / 2) - (this->content.length() / 2);
             break;
         case styles::Justification::RIGHT:
-            padding = (total_width - this->content.length());
+            padding = (width - this->content.length());
             break;
     }
 
@@ -47,6 +44,12 @@ Text::render() const
     output << this->content;
 
     output << termcolor::reset;
+}
+
+int
+Text::get_lenght() const
+{
+    return markup_text::get_text_length(this->content);
 }
 
 } // namespace widgets

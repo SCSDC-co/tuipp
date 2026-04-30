@@ -55,7 +55,8 @@ class MarkupText : public tuipp::widgets::IRenderable
     {
     }
 
-    virtual void render() const;
+    virtual void render(const int& width) const override;
+    virtual int get_lenght() const override;
 
   private:
     std::string content{};

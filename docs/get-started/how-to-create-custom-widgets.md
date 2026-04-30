@@ -15,9 +15,15 @@ class MyWidget : public tuipp::widgets::IRenderable
     MyWidget(std::string content) : content(content) {}
 
     // you need to provide an implementation for render
-    virtual void render() const {
-      std::cout << tuipp::colors::red << content
+    virtual void render(const int& width) const {
+      std::cout << tuipp::colors::red << this->content
                 << tuipp::colors::reset << std::endl;
+    }
+
+    // you need to implement this method because widgets like panel
+    // are gonna call it before rendering for calculating the layout
+    virtual int get_lenght() const {
+      return this->content.lenght();
     }
 };
 

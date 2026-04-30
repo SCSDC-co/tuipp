@@ -8,7 +8,8 @@ namespace widgets {
 class IRenderable
 {
   public:
-    virtual void render() const = 0;
+    virtual void render(const int& width) const = 0;
+    virtual int get_lenght() const              = 0;
 };
 
 } // namespace widgets
