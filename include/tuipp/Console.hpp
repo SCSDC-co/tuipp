@@ -23,8 +23,8 @@ namespace tuipp {
  * @code{.cpp}
  * tuipp::Console console{}; // creates the console
  *
- * console << "[green]Print to the screen using[/] << [green]operator overload![/]" << std::endl;
- * console << "you can" << " " << "chain them!" << std::endl;
+ * console << "[green]Print to the screen using[/] << [green]operator overload![/]" << '\n';
+ * console << "you can" << " " << "chain them!" << '\n';
  *
  * tuipp::Console::print("[green]This is a static member![/]");
  * tuipp::Console::println("[green]Also this![/]");
@@ -154,11 +154,10 @@ class Console
             println("  [green]Color support: [/]", get_color_support_string());
             println("  [green]ANSI support: [/]", support_ansi);
         } else {
-            std::cout << "Console properties:" << std::endl;
-            std::cout << "  Size: " << terminal_size.width << "x" << terminal_size.height
-                      << std::endl;
-            std::cout << "  Color support: " << get_color_support_string() << std::endl;
-            std::cout << "  ANSI support: " << (support_ansi ? "true" : "false") << std::endl;
+            std::cout << "Console properties:" << '\n';
+            std::cout << "  Size: " << terminal_size.width << "x" << terminal_size.height << '\n';
+            std::cout << "  Color support: " << get_color_support_string() << '\n';
+            std::cout << "  ANSI support: " << (support_ansi ? "true" : "false") << '\n';
         }
     }
 

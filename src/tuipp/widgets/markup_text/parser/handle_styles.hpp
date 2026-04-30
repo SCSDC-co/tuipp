@@ -250,7 +250,7 @@ handle_styles(std::basic_ostream<CharT>& stream,
         if (token_to_style.find(buffer) == token_to_style.end()) {
             std::cerr << '\n'
                       << termcolor::reset << '\"' << buffer << '\"' << " is not a valid style!"
-                      << std::endl;
+                      << '\n';
 
             std::exit(1);
         } else {

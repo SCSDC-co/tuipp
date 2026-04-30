@@ -66,7 +66,7 @@ Rule::render() const
         ++width;
     }
 
-    output << termcolor::reset << std::endl;
+    output << termcolor::reset << '\n';
 }
 
 } // namespace widgets
