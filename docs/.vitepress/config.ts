@@ -13,7 +13,7 @@ export default defineConfig({
 
   lastUpdated: true,
 
-  base: "tuipp",
+  base: "/tuipp/",
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
