@@ -86,6 +86,10 @@ class Console
                   tuipp::widgets::markup_text::parse_string(std::cout, content);
               } else {
                   std::print("{}", content);
+
+                  if (content != '\n') {
+                      std::cout << " ";
+                  }
               }
           }(),
           ...);
