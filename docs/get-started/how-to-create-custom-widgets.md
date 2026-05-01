@@ -22,7 +22,7 @@ class MyWidget : public tuipp::widgets::IRenderable
 
     // you need to implement this method because widgets like panel
     // are gonna call it before rendering for calculating the layout
-    virtual int get_lenght() const {
+    virtual int get_lenght(const int& width = 0) const {
       return this->content.lenght();
     }
 };
