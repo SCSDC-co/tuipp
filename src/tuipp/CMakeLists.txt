@@ -5,5 +5,6 @@ target_sources(
         ./widgets/markup_text/MarkupText.cpp
         ./widgets/Text.cpp
         ./widgets/Rule.cpp
+        ./widgets/Panel.cpp
         ./borders/Border.cpp
 )

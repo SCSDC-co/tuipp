@@ -62,3 +62,11 @@ install(
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}
     INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
+
+option(TUIPP_BUILD_TESTS "build the TUI++ tests" OFF)
+
+if(TUIPP_BUILD_TESTS)
+    add_executable(tuipp_tests ../test/main.cpp)
+
+    target_link_libraries(tuipp_tests ${PROJECT_NAME})
+endif()

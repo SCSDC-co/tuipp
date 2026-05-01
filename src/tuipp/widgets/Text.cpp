@@ -7,7 +7,6 @@
 #include "apply_styles.hpp"
 #include "tuipp/styles/Justification.hpp"
 #include "widgets/apply_styles.hpp"
-#include "widgets/markup_text/parser/get_text_length.hpp"
 
 namespace tuipp {
 
@@ -47,9 +46,9 @@ Text::render(const int& width) const
 }
 
 int
-Text::get_lenght() const
+Text::get_length() const
 {
-    return markup_text::get_text_length(this->content);
+    return this->content.length();
 }
 
 } // namespace widgets

@@ -9,7 +9,9 @@ class IRenderable
 {
   public:
     virtual void render(const int& width) const = 0;
-    virtual int get_lenght() const              = 0;
+    virtual int get_length() const              = 0;
+
+    virtual ~IRenderable() = default;
 };
 
 } // namespace widgets

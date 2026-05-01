@@ -10,4 +10,5 @@ set(public_header
     ./widgets/MarkupText.hpp
     ./widgets/Text.hpp
     ./widgets/Rule.hpp
+    ./widgets/Panel.hpp
 )

@@ -81,8 +81,7 @@ class Console
           [&]() {
               if constexpr (std::is_base_of_v<widgets::IRenderable, std::remove_cvref_t<Args>>) {
                   content.render(terminal_size.width);
-              } else if constexpr (std::is_convertible_v<decltype(content), std::string> ||
-                                   std::is_convertible_v<decltype(content), std::string_view>) {
+              } else if constexpr (std::is_convertible_v<decltype(content), std::string>) {
                   tuipp::widgets::markup_text::parse_string(std::cout, content);
               } else {
                   std::print("{}", content);

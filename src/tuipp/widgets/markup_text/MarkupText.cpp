@@ -14,7 +14,7 @@ MarkupText::render(const int& width) const
 }
 
 int
-MarkupText::get_lenght() const
+MarkupText::get_length() const
 {
     return markup_text::get_text_length(this->content);
 }
